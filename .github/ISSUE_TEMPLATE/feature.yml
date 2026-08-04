@@ -1,0 +1,28 @@
+name: Capability proposal
+description: Propose a purposeful new M3HT4 capability.
+title: "[Capability]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        M3HT4 adds capabilities when they support a defined operational or learning objective.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What problem or learning goal does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Operational value
+      description: How would this improve visibility, recovery, realism, automation, or validation?
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and dependencies
+      description: Include complexity, security, resource, and maintenance considerations.

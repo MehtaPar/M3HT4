@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: M3HT4 Documentation
+    url: https://github.com/MehtaPar/M3HT4/tree/main/docs
+    about: Review the documentation before opening an issue.
+  - name: Security Policy
+    url: https://github.com/MehtaPar/M3HT4/security/policy
+    about: Do not disclose secrets or live infrastructure details in a public issue.
