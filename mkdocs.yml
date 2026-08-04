@@ -1,0 +1,62 @@
+site_name: M3HT4
+site_url: https://www.m3ht4.com
+site_description: Modern Managed Multi-Domain platform for Hybrid Threat Hunting and Training
+repo_name: M3HT4
+repo_url: https://github.com/OWNER/M3HT4
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/branding/m3ht4-icon.png
+  favicon: assets/branding/m3ht4-icon.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - scheme: slate
+      primary: black
+      accent: cyan
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Project:
+      - Status: project-status.md
+      - Operations Model: operations-model.md
+      - Roadmap: roadmap.md
+      - Technology Strategy: technology-stack.md
+      - Standards: standards.md
+  - Architecture:
+      - Overview: architecture/README.md
+      - Physical Topology: architecture/physical-topology.md
+      - Logical Topology: architecture/logical-topology.md
+      - Storage: architecture/storage-layout.md
+      - Trust Boundaries: architecture/trust-boundaries.md
+  - Recovery:
+      - Backup and Recovery: recovery/backup-and-recovery.md
+      - Recovery Principles: recovery/recovery-principles.md
+  - Security:
+      - Publication Safety: security/publication-safety.md
+      - Public Repository Threat Model: security/public-repository-threat-model.md
+  - Milestones:
+      - Infrastructure v1.0: project-log/phase-1-infrastructure.md
