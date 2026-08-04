@@ -1,14 +1,17 @@
 <div align="center">
-
-<img src="assets/branding/m3ht4-banner.png" alt="M3HT4 — Modern Managed Multi-Domain Hybrid Threat Hunting Training" width="100%">
+  <img src="assets/branding/m3ht4-banner.png" alt="M3HT4 banner" width="100%">
+</div>
 
 <br>
 
-[![Website](https://img.shields.io/badge/Website-M3HT4.com-00cfff?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.m3ht4.com)
-[![Project Status](https://img.shields.io/badge/Status-Active-28c840?style=for-the-badge)](docs/project-status.md)
-[![Infrastructure](https://img.shields.io/badge/Infrastructure-v1.0-1769ff?style=for-the-badge)](docs/project-log/phase-1-infrastructure.md)
-[![Documentation](https://img.shields.io/badge/Docs-Explore-8b5cf6?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/README.md)
-[![License](https://img.shields.io/badge/License-MIT-e5e7eb?style=for-the-badge)](LICENSE)
+<div align="center">
+
+[![Website](https://img.shields.io/badge/M3HT4.com-Visit-00D9FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.m3ht4.com)
+[![Status](https://img.shields.io/badge/Project-Active-22C55E?style=for-the-badge)](docs/project-status.md)
+[![Milestone](https://img.shields.io/badge/Infrastructure-v1.0-2563EB?style=for-the-badge)](docs/project-log/phase-1-infrastructure.md)
+[![Documentation](https://img.shields.io/badge/Documentation-Explore-8B5CF6?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/README.md)
+[![Security](https://img.shields.io/badge/Public_Docs-Sanitized-F59E0B?style=for-the-badge&logo=shield&logoColor=white)](docs/security/publication-safety.md)
+[![License](https://img.shields.io/badge/License-MIT-E5E7EB?style=for-the-badge)](LICENSE)
 
 # M3HT4
 
@@ -21,53 +24,65 @@
 
 ---
 
-## What is M3HT4?
+## Mission
 
-**M3HT4** is an enterprise-inspired cybersecurity platform and cyber range built to explore how modern infrastructure, identity, networking, detection engineering, adversary emulation, automation, analytics, and recovery work together.
+**M3HT4** is an enterprise-inspired cybersecurity platform and cyber range built to support both **blue-team defense** and **authorized red-team / penetration-testing workflows**. It connects infrastructure engineering, identity, network security, detection engineering, adversary emulation, threat hunting, automation, analytics, and recovery into one coherent environment.
 
-It is not a collection of disconnected tools. Each component must support a defined operational or learning objective.
+The project follows one rule:
 
-<div align="center">
+> **Every component must support a defined operational or learning objective.**
 
-| **Build** | **Defend** | **Hunt** | **Evolve** |
-|:---:|:---:|:---:|:---:|
-| Design reliable infrastructure | Engineer layered visibility | Investigate activity across hosts and networks | Automate, measure, document, and improve |
-| Virtualization, identity, networking | Telemetry, SIEM, segmentation | Threat hunting and purple-team workflows | Analytics, AI, repeatable runbooks |
+M3HT4 is not a tool collection. It is a deliberately engineered platform for building, defending, observing, attacking under authorization, validating controls, recovering, and continuously improving a realistic security environment.
 
-</div>
+The project is intentionally **purple-team oriented**: red-team activity should generate evidence, blue-team systems should observe and respond, and both sides should produce measurable improvements.
 
-## Project pillars
+## Core capabilities
+
+<table>
+<tr>
+<td width="25%" align="center"><strong>BUILD</strong><br><br>Virtualization<br>Identity<br>Networking<br>Storage</td>
+<td width="25%" align="center"><strong>DEFEND</strong><br><br>Telemetry<br>Detection<br>Threat hunting<br>Incident response</td>
+<td width="25%" align="center"><strong>TEST</strong><br><br>Reconnaissance<br>Exploitation<br>Adversary emulation<br>Pentest reporting</td>
+<td width="25%" align="center"><strong>EVOLVE</strong><br><br>Purple-team validation<br>Automation<br>Analytics<br>Continuous improvement</td>
+</tr>
+</table>
+
+## Blue, red, and purple team utility
+
+| Discipline | M3HT4 utility |
+|---|---|
+| **Blue team** | Centralized logging, endpoint telemetry, network monitoring, SIEM workflows, detection engineering, threat hunting, incident-response practice, and recovery validation |
+| **Red team / pentest** | Authorized reconnaissance, vulnerability validation, exploitation practice, privilege escalation, lateral movement, post-exploitation, attack-path analysis, and professional reporting |
+| **Purple team** | Execute controlled techniques, verify telemetry, measure alert coverage, tune detections, validate segmentation, and document lessons learned |
 
 ```mermaid
-mindmap
-  root((M3HT4))
-    Infrastructure
-      Virtualization
-      Identity
-      Storage
-      Recovery
-    Network Security
-      Firewalling
-      Segmentation
-      Visibility
-    Detection Engineering
-      Endpoint Telemetry
-      Network Telemetry
-      SIEM
-      Alert Validation
-    Adversary Emulation
-      Authorized Testing
-      Attack Simulation
-      Purple Teaming
-    Threat Hunting
-      Hypothesis Driven Hunts
-      Jupyter Analytics
-      Investigation Workflows
-    Automation
-      Repeatable Builds
-      Reporting
-      Local AI Assistance
+flowchart LR
+    Red[Authorized Red-Team Activity]
+    Telemetry[Endpoint and Network Telemetry]
+    Blue[Blue-Team Detection and Response]
+    Tune[Detection and Control Improvements]
+    Report[Evidence and Reporting]
+
+    Red --> Telemetry --> Blue --> Tune
+    Red --> Report
+    Blue --> Report
+    Tune --> Red
 ```
+
+M3HT4 does not treat offensive and defensive work as separate silos. The strongest learning happens when attack activity, telemetry, detection, investigation, and remediation are evaluated together.
+
+## Explore M3HT4
+
+<table>
+<tr>
+<td width="50%"><a href="docs/architecture/README.md"><img src="assets/cards/architecture.svg" width="100%" alt="Architecture"></a></td>
+<td width="50%"><a href="docs/recovery/backup-and-recovery.md"><img src="assets/cards/recovery.svg" width="100%" alt="Recovery"></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="docs/technology-stack.md"><img src="assets/cards/detection.svg" width="100%" alt="Detection"></a></td>
+<td width="50%"><a href="docs/roadmap.md"><img src="assets/cards/roadmap.svg" width="100%" alt="Roadmap"></a></td>
+</tr>
+</table>
 
 ## Architecture overview
 
@@ -77,7 +92,7 @@ flowchart TB
     Edge[Dedicated Security Gateway<br/>OPNsense]
     Core[Managed Core Switching]
 
-    subgraph Trust["Segmented Trust Zones"]
+    subgraph Zones["Segmented Trust Zones"]
         Mgmt[Management]
         Servers[Server Services]
         Users[Endpoints]
@@ -86,10 +101,10 @@ flowchart TB
         DMZ[DMZ]
     end
 
-    PVE[Proxmox Virtualization Platform]
-    Identity[Identity and DNS Services]
-    SIEM[Detection and Analytics]
-    Targets[Controlled Lab Systems]
+    Platform[Proxmox Virtualization Platform]
+    Identity[Identity and DNS]
+    Detection[Detection and Analytics]
+    Range[Controlled Lab Systems]
     Backup[(Independent Backup Repository)]
 
     Internet --> Edge --> Core
@@ -100,74 +115,97 @@ flowchart TB
     Core --> Offensive
     Core --> DMZ
 
-    Mgmt --> PVE
+    Mgmt --> Platform
     Servers --> Identity
-    Monitor --> SIEM
-    Offensive --> Targets
-    PVE --> Backup
+    Monitor --> Detection
+    Offensive --> Range
+    Platform --> Backup
 ```
 
-> The public architecture is intentionally sanitized. Real addressing, device identifiers, credentials, firewall policy, external endpoints, and operational secrets are not published.
+> **Public-safety note:** This architecture is intentionally generalized. Live addresses, device identifiers, credentials, firewall policy, external endpoints, VPN details, and management paths are not published.
 
-## Current status
+## Current milestone
 
-| Capability | Status | Notes |
-|---|:---:|---|
-| Virtualization foundation | ✅ Complete | Clean Proxmox baseline |
-| Storage separation | ✅ Complete | Dedicated host, VM, infrastructure, and backup roles |
-| Identity services | ✅ Complete | Restored and validated from backup |
-| Disaster recovery | ✅ Validated | End-to-end VM recovery tested |
-| Automated backups | ✅ Active | Independent backup target |
-| Enterprise firewall | 🟡 Planned | Dedicated OPNsense deployment |
-| Network segmentation | 🟡 Planned | Managed switching and trust zones |
-| Detection engineering | 🔵 Roadmap | Endpoint and network telemetry |
-| Public platform | 🔵 Roadmap | M3HT4.com |
+### Infrastructure v1.0 — Complete
 
-See the live [project status](docs/project-status.md) and [roadmap](docs/roadmap.md).
+- Clean Proxmox foundation
+- Dedicated storage roles
+- Restored identity services
+- Validated external VM backup
+- End-to-end disaster recovery test
+- Golden recovery snapshot
+- Automated independent backups
 
-## Explore the project
+| Workstream | State |
+|---|:---:|
+| Virtualization foundation | ✅ |
+| Storage separation | ✅ |
+| Identity services | ✅ |
+| Disaster recovery | ✅ |
+| Automated backups | ✅ |
+| Dedicated firewall | 🟡 Next |
+| Managed segmentation | 🟡 Next |
+| Detection engineering | 🔵 Planned |
+| Threat-hunting analytics | 🔵 Planned |
+| M3HT4.com | 🔵 Planned |
 
-| Start here | Description |
-|---|---|
-| [Documentation Hub](docs/README.md) | The organized entry point for all project documentation |
-| [Architecture](docs/architecture/README.md) | Physical, logical, storage, and trust-boundary design |
-| [Infrastructure v1.0](docs/project-log/phase-1-infrastructure.md) | What was built, validated, and learned |
-| [Backup and Recovery](docs/recovery/backup-and-recovery.md) | Sanitized disaster-recovery design |
-| [Security and Publication Safety](docs/security/publication-safety.md) | How the project avoids exposing the live environment |
-| [Technology Strategy](docs/technology-stack.md) | Platforms and tools selected for each capability |
-| [Roadmap](docs/roadmap.md) | Planned phases and outcomes |
-| [M3HT4.com](website/README.md) | Public website strategy |
+[View detailed status →](docs/project-status.md)
 
-## Technology strategy
+## Platform layers
 
-<div align="center">
+```mermaid
+flowchart LR
+    Foundation[Infrastructure Foundation]
+    Network[Enterprise Networking]
+    Systems[Core Systems]
+    Telemetry[Detection Telemetry]
+    Validation[Adversary Emulation]
+    Hunting[Threat Hunting]
+    Automation[Automation and AI]
+    Public[M3HT4.com]
 
-| Layer | Technologies |
+    Foundation --> Network --> Systems --> Telemetry --> Validation --> Hunting --> Automation --> Public
+```
+
+## Technology direction
+
+| Layer | Direction |
 |---|---|
 | Virtualization | Proxmox VE, QEMU/KVM, LVM-Thin |
 | Identity | Windows Server, Active Directory, DNS |
-| Network Security | OPNsense, managed switching, VLANs |
+| Network security | OPNsense, managed switching, VLANs |
 | Endpoints | Windows, Linux, Kali |
-| Detection | Sysmon, WEF, Wazuh, Zeek, Suricata |
-| Analytics | Jupyter, Python, structured datasets |
-| Automation | PowerShell, Bash, Python, APIs |
-| Remote Administration | Zero-trust remote access patterns |
-| AI Assistance | Local models for analysis and documentation |
+| Endpoint telemetry | Sysmon, Windows Event Forwarding |
+| Network telemetry | Zeek, Suricata |
+| SIEM | Wazuh or compatible stack |
+| Offensive security | Kali, controlled targets, pentest tooling, adversary emulation |
+| Validation | MITRE ATT&CK mapping, purple-team exercises, evidence collection |
+| Analytics | Python, Jupyter |
+| Automation | Bash, PowerShell, Python, APIs |
+| AI assistance | Local models for triage, reporting, and analysis |
 
-</div>
+[Read the technology strategy →](docs/technology-stack.md)
 
-Technology selection is driven by purpose, interoperability, recoverability, and realistic enterprise workflows—not by tool count.
+## Documentation
+
+| Section | Contents |
+|---|---|
+| [Documentation hub](docs/README.md) | Central navigation |
+| [Architecture](docs/architecture/README.md) | Physical, logical, storage, trust boundaries |
+| [Infrastructure v1.0](docs/project-log/phase-1-infrastructure.md) | Build and recovery case study |
+| [Backup and recovery](docs/recovery/backup-and-recovery.md) | Resilience design |
+| [Publication safety](docs/security/publication-safety.md) | Public/private data separation |
+| [Threat model](docs/security/public-repository-threat-model.md) | Public repository risk controls |
+| [Roadmap](docs/roadmap.md) | Planned phases |
+| [M3HT4.com](website/README.md) | Public website strategy |
 
 ## Security-first publication model
-
-M3HT4 uses a strict separation between public project content and private operations.
 
 ### Public repository
 
 - Sanitized diagrams
 - Reusable documentation
-- Detection content
-- Automation examples
+- Detection and automation examples
 - Lessons learned
 - Generic configuration templates
 - Portfolio-ready case studies
@@ -176,44 +214,38 @@ M3HT4 uses a strict separation between public project content and private operat
 
 - Real internal addressing
 - Detailed inventory
-- Environment-specific recovery notes
-- Internal change records
+- Environment-specific maintenance and recovery notes
 - Operational diagrams
+- Change records
 
 ### Never stored in Git
 
-- Passwords, tokens, API keys, cookies, or recovery codes
-- Private keys or certificate secrets
-- VPN credentials
+- Credentials, tokens, private keys, cookies, or recovery codes
+- VPN secrets or certificate private keys
 - Public origin addresses or management endpoints
 - Authentication databases or password hashes
-- Raw VM backups, disk images, memory dumps, or private packet captures
+- Raw VM backups, memory dumps, disk images, or private packet captures
 
-Read the full [publication safety standard](docs/security/publication-safety.md).
-
-## Repository structure
+## Repository map
 
 ```text
 M3HT4/
-├── .github/                 # Issue templates, workflows, repository standards
+├── .github/                 GitHub workflows and community templates
 ├── assets/
-│   ├── branding/            # Official icon and banner
-│   └── diagrams/            # Sanitized visual assets
+│   ├── branding/            Official visual identity
+│   └── cards/               README navigation visuals
 ├── docs/
-│   ├── architecture/        # Physical, logical, storage, trust boundaries
-│   ├── project-log/         # Milestone case studies
-│   ├── recovery/            # Backup and recovery documentation
-│   ├── security/            # Publication and disclosure safety
-│   └── README.md            # Documentation hub
-├── examples/                # Sanitized examples and templates
-├── website/                 # M3HT4.com planning
-├── CONTRIBUTING.md
-├── SECURITY.md
-├── CODE_OF_CONDUCT.md
+│   ├── architecture/        Platform and trust-boundary design
+│   ├── project-log/         Milestone case studies
+│   ├── recovery/            Backup and resilience
+│   └── security/            Publication safety
+├── examples/                Sanitized reusable examples
+├── website/                 M3HT4.com planning
+├── mkdocs.yml               Documentation-site configuration
 └── README.md
 ```
 
-## Project philosophy
+## Engineering principles
 
 1. **Reliability over speed**
 2. **Purpose over unnecessary complexity**
@@ -221,21 +253,19 @@ M3HT4/
 4. **Understand before implementing**
 5. **Document while building**
 6. **Keep public content sanitized**
-7. **Make every critical capability recoverable**
+7. **Make critical systems recoverable**
 8. **Validate assumptions through testing**
 
 ## Responsible use
 
-M3HT4 is intended for authorized learning, defensive validation, detection engineering, and controlled security testing. Never test systems without explicit permission.
+M3HT4 is intended for authorized blue-team training, red-team and penetration-testing practice, purple-team validation, detection engineering, threat hunting, and controlled security testing. Never test systems without explicit permission.
 
 ---
 
 <div align="center">
+  <img src="assets/branding/m3ht4-icon.png" alt="M3HT4 eagle icon" width="150">
 
-<img src="assets/branding/m3ht4-icon.png" alt="M3HT4 eagle icon" width="150">
-
-### **M3HT4.com**
+### [M3HT4.com](https://www.m3ht4.com)
 
 **Built with purpose. Secured with discipline. Shared to empower.**
-
 </div>

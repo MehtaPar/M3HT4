@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="230" viewBox="0 0 700 230">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#07111f"/>
+    <stop offset="1" stop-color="#0b1728"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="2" y="2" width="696" height="226" rx="22" fill="url(#bg)" stroke="#6ee7a8" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="92" cy="115" r="52" fill="#0a1a2d" stroke="#6ee7a8" stroke-width="3"/>
+<text x="92" y="132" text-anchor="middle" font-family="Segoe UI Symbol,Arial" font-size="50" fill="#6ee7a8" filter="url(#glow)">↻</text>
+<text x="175" y="95" font-family="Segoe UI,Arial" font-size="35" font-weight="700" fill="#f8fafc">Recovery</text>
+<text x="175" y="137" font-family="Segoe UI,Arial" font-size="22" fill="#a9c4df">Validated backups, restoration, and resilience principles</text>
+<path d="M175 165 H630" stroke="#6ee7a8" stroke-opacity=".65" stroke-width="3"/>
+<text x="630" y="198" text-anchor="end" font-family="Segoe UI,Arial" font-size="18" fill="#6ee7a8">EXPLORE →</text>
+</svg>

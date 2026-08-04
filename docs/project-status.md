@@ -11,9 +11,10 @@ Last public milestone: **Infrastructure v1.0**
 | Disaster recovery | ✅ Validated | End-to-end restore completed |
 | Firewall deployment | 🟡 Next | Dedicated OPNsense platform |
 | Network segmentation | 🟡 Next | Managed switching and trust zones |
-| Endpoint telemetry | 🔵 Planned | Sysmon and centralized logging |
-| Network telemetry | 🔵 Planned | Zeek and Suricata |
-| SIEM | 🔵 Planned | Wazuh or equivalent |
+| Blue-team telemetry | 🔵 Planned | Sysmon, centralized logging, Zeek, and Suricata |
+| SIEM and detection | 🔵 Planned | Wazuh or equivalent |
+| Red-team / pentest capability | 🔵 Planned | Authorized testing, controlled targets, and reporting |
+| Purple-team validation | 🔵 Planned | ATT&CK-mapped exercises and detection tuning |
 | Threat-hunting analytics | 🔵 Planned | Jupyter workflows |
 | Local AI assistance | 🔵 Planned | Analysis and reporting support |
 | M3HT4.com | 🔵 Planned | Public project platform |

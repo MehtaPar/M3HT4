@@ -14,6 +14,10 @@ The documentation is organized around capabilities and project milestones so rea
 - [Storage architecture](architecture/storage-layout.md)
 - [Trust boundaries](architecture/trust-boundaries.md)
 
+### Operations
+
+- [Blue, red, and purple team model](operations-model.md)
+
 ### Operations and recovery
 
 - [Backup and recovery](recovery/backup-and-recovery.md)
