@@ -13,6 +13,32 @@
 [![Security](https://img.shields.io/badge/Public_Docs-Sanitized-F59E0B?style=for-the-badge&logo=shield&logoColor=white)](docs/security/publication-safety.md)
 [![License](https://img.shields.io/badge/License-MIT-E5E7EB?style=for-the-badge)](LICENSE)
 
+## 🚧 Project Status
+
+M3HT4 is an **actively developed** enterprise-inspired cybersecurity platform supporting **blue-team defense, authorized red-team operations, and purple-team validation**.
+
+The project is being built incrementally with an emphasis on **quality, security, documentation, and real-world applicability** rather than rapid feature delivery.
+
+### Current Progress
+
+| Capability | Status |
+|------------|:------:|
+| 🖥️ Infrastructure Foundation | ✅ Complete |
+| 💾 Storage & Disaster Recovery | ✅ Complete |
+| 🏢 Active Directory | ✅ Complete |
+| 🔒 OPNsense Enterprise Firewall | 🟡 In Progress |
+| 🌐 Network Segmentation | 🟡 In Progress |
+| 🛡️ Blue Team Platform | 🔵 Planned |
+| ⚔️ Red Team Platform | 🔵 Planned |
+| 🟣 Purple Team Validation | 🔵 Planned |
+| 📊 Threat Hunting & Analytics | 🔵 Planned |
+| 🤖 AI-Assisted Workflows | 🔵 Planned |
+| 🌍 M3HT4.com | 🔵 Planned |
+
+> **Mission:** Build a modern cybersecurity platform that demonstrates enterprise infrastructure, offensive security, defensive security, automation, and threat hunting through realistic engineering projects and case studies.
+
+---
+
 # M3HT4
 
 ### **Modern • Managed • Multi-Domain**  
@@ -26,7 +52,9 @@
 
 ## Mission
 
-**M3HT4** is an enterprise-inspired cybersecurity platform and cyber range built to support both **blue-team defense** and **authorized red-team / penetration-testing workflows**. It connects infrastructure engineering, identity, network security, detection engineering, adversary emulation, threat hunting, automation, analytics, and recovery into one coherent environment.
+M3HT4 (**Modern • Managed • Multi-Domain — Hybrid • Threat • Hunting • Training**) is an enterprise-inspired cybersecurity platform designed to bridge the gap between infrastructure engineering, offensive security, defensive security, automation, and threat hunting.
+
+Rather than focusing on isolated tools or labs, M3HT4 is being engineered as a complete security ecosystem where infrastructure, detection engineering, penetration testing, incident response, analytics, and automation work together to emulate modern enterprise environments.
 
 The project follows one rule:
 
