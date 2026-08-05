@@ -1,61 +1,43 @@
----
-hide:
-  - navigation
----
+# M3HT4 — Modern Hunting Terrain
 
-<div align="center">
-  <img src="../assets/branding/m3ht4-banner.png" alt="M3HT4" width="100%">
-</div>
+**Built for 3 Teams. Powered by 4 Pillars.**
 
-# M3HT4 Documentation
+M3HT4 connects Blue, Red, and Purple team perspectives through structured threat hunting, detection validation, adversary-emulation planning, and hands-on learning.
 
-**M3HT4** stands for:
+![M3HT4 framework](assets/diagrams/m3ht4-framework.svg)
 
-**Modern • Managed • Multi-Domain**  
-**Hybrid • Threat • Hunting • Training**
-
-M3HT4 is an enterprise-inspired cybersecurity platform and cyber range supporting blue-team defense, authorized red-team and penetration-testing workflows, and purple-team validation.
-
-## Start here
+## Explore
 
 <div class="grid cards" markdown>
 
--   :material-server-security:{ .lg .middle } **Architecture**
+-   :material-binoculars: **Hunt**
 
     ---
 
-    Understand the platform, trust boundaries, storage roles, and planned segmentation.
+    Build familiarity with telemetry, investigate behavior, and document evidence-backed conclusions.
 
-    [:octicons-arrow-right-24: Explore architecture](architecture/README.md)
-
--   :material-backup-restore:{ .lg .middle } **Backup and Recovery**
+-   :material-shield-search: **Detect**
 
     ---
 
-    Review the validated recovery design and resilience principles.
+    Translate observed behavior into testable detection ideas and measurable defensive improvements.
 
-    [:octicons-arrow-right-24: Explore recovery](recovery/backup-and-recovery.md)
-
--   :material-radar:{ .lg .middle } **Technology Strategy**
+-   :material-chess-knight: **Emulate**
 
     ---
 
-    See which tools support each capability and why they were selected.
+    Design authorized adversary-emulation plans around objectives, expected evidence, and safety controls.
 
-    [:octicons-arrow-right-24: Explore technologies](technology-stack.md)
-
--   :material-map-marker-path:{ .lg .middle } **Roadmap**
+-   :material-school: **Train**
 
     ---
 
-    Follow the platform from infrastructure foundation to public security platform.
-
-    [:octicons-arrow-right-24: View roadmap](roadmap.md)
+    Learn by working through repeatable scenarios from Blue, Red, and Purple perspectives.
 
 </div>
 
-## Current milestone
+## Read next
 
-**Infrastructure v1.0 is complete.**
-
-The hypervisor, storage architecture, identity services, recovery workflow, golden snapshot, and scheduled backups have been built and validated.
+- [Platform vision](platform-vision.md)
+- [Operating model](operations-model.md)
+- [Roadmap](roadmap.md)

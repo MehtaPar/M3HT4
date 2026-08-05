@@ -1,299 +1,166 @@
-<div align="center">
-  <img src="assets/branding/m3ht4-banner.png" alt="M3HT4 banner" width="100%">
-</div>
+<p align="center">
+  <img src="assets/branding/m3ht4-banner.png" alt="M3HT4 — Modern Hunting Terrain" width="100%">
+</p>
 
-<br>
+<p align="center">
+  <strong>An interactive cybersecurity framework for Blue, Red, and Purple teams.</strong><br>
+  Build familiarity with security data, investigate threats, plan adversary emulation, and turn shared evidence into stronger purple-team engagements.
+</p>
 
-<div align="center">
-
-[![Website](https://img.shields.io/badge/M3HT4.com-Visit-00D9FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.m3ht4.com)
-[![Status](https://img.shields.io/badge/Project-Active-22C55E?style=for-the-badge)](docs/project-status.md)
-[![Milestone](https://img.shields.io/badge/Infrastructure-v1.0-2563EB?style=for-the-badge)](docs/project-log/phase-1-infrastructure.md)
-[![Documentation](https://img.shields.io/badge/Documentation-Explore-8B5CF6?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/README.md)
-[![Security](https://img.shields.io/badge/Public_Docs-Sanitized-F59E0B?style=for-the-badge&logo=shield&logoColor=white)](docs/security/publication-safety.md)
-[![License](https://img.shields.io/badge/License-MIT-E5E7EB?style=for-the-badge)](LICENSE)
-
-## 🚧 Project Status
-
-M3HT4 is an **actively developed** enterprise-inspired cybersecurity platform supporting **blue-team defense, authorized red-team operations, and purple-team validation**.
-
-The project is being built incrementally with an emphasis on **quality, security, documentation, and real-world applicability** rather than rapid feature delivery.
-
-### Current Progress
-
-| Capability | Status |
-|------------|:------:|
-| 🖥️ Infrastructure Foundation | ✅ Complete |
-| 💾 Storage & Disaster Recovery | ✅ Complete |
-| 🏢 Active Directory | ✅ Complete |
-| 🔒 OPNsense Enterprise Firewall | 🟡 In Progress |
-| 🌐 Network Segmentation | 🟡 In Progress |
-| 🛡️ Blue Team Platform | 🔵 Planned |
-| ⚔️ Red Team Platform | 🔵 Planned |
-| 🟣 Purple Team Validation | 🔵 Planned |
-| 📊 Threat Hunting & Analytics | 🔵 Planned |
-| 🤖 AI-Assisted Workflows | 🔵 Planned |
-| 🌍 M3HT4.com | 🔵 Planned |
-
-> **Mission:** Build a modern cybersecurity platform that demonstrates enterprise infrastructure, offensive security, defensive security, automation, and threat hunting through realistic engineering projects and case studies.
+<p align="center">
+  <a href="docs/platform-vision.md"><strong>Platform Vision</strong></a> ·
+  <a href="docs/operations-model.md"><strong>Operating Model</strong></a> ·
+  <a href="docs/roadmap.md"><strong>Roadmap</strong></a> ·
+  <a href="https://m3ht4.com"><strong>M3HT4.com</strong></a>
+</p>
 
 ---
 
 # M3HT4
 
-### **Modern • Managed • Multi-Domain**  
-### **Hybrid • Threat • Hunting • Training**
+## Modern Hunting Terrain
 
-**Build. Defend. Hunt. Evolve.**
+**Built for 3 Teams. Powered by 4 Pillars.**
 
-</div>
+M3HT4 is a developing, vendor-neutral cybersecurity framework that connects **threat hunting**, **detection engineering**, **adversary emulation**, and **collaborative learning** in one structured experience.
 
----
+It is designed to help practitioners understand the same security data from different operational perspectives:
 
-## Mission
+- **Blue teams** investigate telemetry, test hypotheses, and improve detections.
+- **Red teams** study defender visibility and use evidence to build realistic emulation plans.
+- **Purple teams** connect offensive activity with defensive outcomes to plan, execute, and document engagements.
 
-M3HT4 (**Modern • Managed • Multi-Domain — Hybrid • Threat • Hunting • Training**) is an enterprise-inspired cybersecurity platform designed to bridge the gap between infrastructure engineering, offensive security, defensive security, automation, and threat hunting.
+M3HT4 is not intended to become a giant database of every CVE, actor, or technique. The goal is a **lightweight, curated, maintainable framework** that teaches repeatable thinking and produces useful engagement artifacts.
 
-Rather than focusing on isolated tools or labs, M3HT4 is being engineered as a complete security ecosystem where infrastructure, detection engineering, penetration testing, incident response, analytics, and automation work together to emulate modern enterprise environments.
+<p align="center">
+  <img src="assets/diagrams/m3ht4-framework.svg" alt="M3HT4 framework: three teams and four pillars" width="920">
+</p>
 
-The project follows one rule:
+## The 3 Teams
 
-> **Every component must support a defined operational or learning objective.**
+| Team | Primary perspective | M3HT4 value |
+|---|---|---|
+| 🔵 **Blue Team** | Observe, investigate, detect, and respond | Build data familiarity, hunting habits, detections, and evidence-backed conclusions |
+| 🔴 **Red Team** | Understand and emulate adversary behavior | Translate objectives and techniques into defensible, observable emulation plans |
+| 🟣 **Purple Team** | Coordinate offense and defense | Connect activity, telemetry, detections, findings, and improvements into one engagement loop |
 
-M3HT4 is not a tool collection. It is a deliberately engineered platform for building, defending, observing, attacking under authorization, validating controls, recovering, and continuously improving a realistic security environment.
+## The 4 Pillars
 
-The project is intentionally **purple-team oriented**: red-team activity should generate evidence, blue-team systems should observe and respond, and both sides should produce measurable improvements.
+| Pillar | Purpose | Typical output |
+|---|---|---|
+| 🔎 **Hunt** | Explore telemetry and test investigative hypotheses | Hunt notes, timelines, findings, and unanswered questions |
+| 🛡️ **Detect** | Convert observed behavior into reusable defensive logic | Detection ideas, mappings, validation evidence, and tuning notes |
+| ♟️ **Emulate** | Plan safe, authorized adversary behavior around clear objectives | Emulation plans, expected telemetry, safety controls, and success criteria |
+| 📘 **Train** | Build practical understanding through guided, repeatable workflows | Exercises, walkthroughs, lessons learned, and analyst development artifacts |
 
-## Core capabilities
-
-<table>
-<tr>
-<td width="25%" align="center"><strong>BUILD</strong><br><br>Virtualization<br>Identity<br>Networking<br>Storage</td>
-<td width="25%" align="center"><strong>DEFEND</strong><br><br>Telemetry<br>Detection<br>Threat hunting<br>Incident response</td>
-<td width="25%" align="center"><strong>TEST</strong><br><br>Reconnaissance<br>Exploitation<br>Adversary emulation<br>Pentest reporting</td>
-<td width="25%" align="center"><strong>EVOLVE</strong><br><br>Purple-team validation<br>Automation<br>Analytics<br>Continuous improvement</td>
-</tr>
-</table>
-
-## Blue, red, and purple team utility
-
-| Discipline | M3HT4 utility |
-|---|---|
-| **Blue team** | Centralized logging, endpoint telemetry, network monitoring, SIEM workflows, detection engineering, threat hunting, incident-response practice, and recovery validation |
-| **Red team / pentest** | Authorized reconnaissance, vulnerability validation, exploitation practice, privilege escalation, lateral movement, post-exploitation, attack-path analysis, and professional reporting |
-| **Purple team** | Execute controlled techniques, verify telemetry, measure alert coverage, tune detections, validate segmentation, and document lessons learned |
+## How the framework connects the teams
 
 ```mermaid
 flowchart LR
-    Red[Authorized Red-Team Activity]
-    Telemetry[Endpoint and Network Telemetry]
-    Blue[Blue-Team Detection and Response]
-    Tune[Detection and Control Improvements]
-    Report[Evidence and Reporting]
+    R[Red Team\nPlans authorized emulation] --> E[Controlled Activity\nand Expected Evidence]
+    E --> B[Blue Team\nHunts and validates visibility]
+    B --> P[Purple Team\nCompares intent, evidence, and outcome]
+    P --> I[Improvements\nDetections · Plans · Procedures · Learning]
+    I --> R
 
-    Red --> Telemetry --> Blue --> Tune
-    Red --> Report
-    Blue --> Report
-    Tune --> Red
+    classDef red fill:#3d1118,stroke:#ff4d5e,color:#fff;
+    classDef blue fill:#082d4f,stroke:#19b8ff,color:#fff;
+    classDef purple fill:#2d1645,stroke:#b96cff,color:#fff;
+    classDef neutral fill:#101820,stroke:#8aa4b8,color:#fff;
+    class R red;
+    class B blue;
+    class P purple;
+    class E,I neutral;
 ```
 
-M3HT4 does not treat offensive and defensive work as separate silos. The strongest learning happens when attack activity, telemetry, detection, investigation, and remediation are evaluated together.
+The same scenario should be useful from all three perspectives. A red-team action is not complete when it merely runs; it becomes valuable when defenders can examine the resulting data, compare expected and actual visibility, and turn the outcome into measurable improvement.
 
-## Explore M3HT4
+## What M3HT4 is becoming
 
-<table>
-<tr>
-<td width="50%"><a href="docs/architecture/README.md"><img src="assets/cards/architecture.svg" width="100%" alt="Architecture"></a></td>
-<td width="50%"><a href="docs/recovery/backup-and-recovery.md"><img src="assets/cards/recovery.svg" width="100%" alt="Recovery"></a></td>
-</tr>
-<tr>
-<td width="50%"><a href="docs/technology-stack.md"><img src="assets/cards/detection.svg" width="100%" alt="Detection"></a></td>
-<td width="50%"><a href="docs/roadmap.md"><img src="assets/cards/roadmap.svg" width="100%" alt="Roadmap"></a></td>
-</tr>
-</table>
+M3HT4 is being developed in layers:
 
-## Architecture overview
+1. **A safe reference environment** for generating and validating realistic security evidence.
+2. **A curated knowledge model** that connects behavior, telemetry, hunting questions, detections, and emulation planning.
+3. **An interactive web experience** that guides users through scenarios without requiring access to the private lab.
+4. **Reusable public artifacts** such as sanitized examples, engagement templates, walkthroughs, and case studies.
+
+The physical lab supports development and validation, but **the lab is not the product**. The public framework should remain usable, understandable, and safe without exposing private infrastructure.
+
+## Example workflow
 
 ```mermaid
-flowchart TB
-    Internet((Internet))
-    Edge[Dedicated Security Gateway<br/>OPNsense]
-    Core[Managed Core Switching]
-
-    subgraph Zones["Segmented Trust Zones"]
-        Mgmt[Management]
-        Servers[Server Services]
-        Users[Endpoints]
-        Monitor[Monitoring and SIEM]
-        Offensive[Authorized Offensive Range]
-        DMZ[DMZ]
-    end
-
-    Platform[Proxmox Virtualization Platform]
-    Identity[Identity and DNS]
-    Detection[Detection and Analytics]
-    Range[Controlled Lab Systems]
-    Backup[(Independent Backup Repository)]
-
-    Internet --> Edge --> Core
-    Core --> Mgmt
-    Core --> Servers
-    Core --> Users
-    Core --> Monitor
-    Core --> Offensive
-    Core --> DMZ
-
-    Mgmt --> Platform
-    Servers --> Identity
-    Monitor --> Detection
-    Offensive --> Range
-    Platform --> Backup
+flowchart TD
+    A[Choose a scenario or behavior] --> B[Review objectives and assumptions]
+    B --> C[Inspect representative telemetry]
+    C --> D{Choose a perspective}
+    D -->|Blue| E[Build a hunt and detection hypothesis]
+    D -->|Red| F[Build an emulation plan]
+    D -->|Purple| G[Build an engagement and validation plan]
+    E --> H[Capture evidence and conclusions]
+    F --> H
+    G --> H
+    H --> I[Document gaps, improvements, and next actions]
 ```
 
-> **Public-safety note:** This architecture is intentionally generalized. Live addresses, device identifiers, credentials, firewall policy, external endpoints, VPN details, and management paths are not published.
+## Scope and guardrails
 
-## Current milestone
+M3HT4 is intended for authorized security research, defensive analysis, adversary-emulation planning, detection validation, and education.
 
-### Infrastructure v1.0 — Complete
+Public content will emphasize:
 
-- Clean Proxmox foundation
-- Dedicated storage roles
-- Restored identity services
-- Validated external VM backup
-- End-to-end disaster recovery test
-- Golden recovery snapshot
-- Automated independent backups
+- sanitized and reusable examples;
+- behavior and evidence rather than exploit novelty;
+- safe planning and validation workflows;
+- vendor-neutral concepts where practical;
+- clear separation between public documentation and private operations;
+- original work or appropriately licensed open-source components.
 
-| Workstream | State |
-|---|:---:|
-| Virtualization foundation | ✅ |
-| Storage separation | ✅ |
-| Identity services | ✅ |
-| Disaster recovery | ✅ |
-| Automated backups | ✅ |
-| Dedicated firewall | 🟡 Next |
-| Managed segmentation | 🟡 Next |
-| Detection engineering | 🔵 Planned |
-| Threat-hunting analytics | 🔵 Planned |
-| M3HT4.com | 🔵 Planned |
+M3HT4 will not publish credentials, private endpoints, live network details, raw private captures, destructive instructions, or environment-specific secrets.
 
-[View detailed status →](docs/project-status.md)
+## Current status
 
-## Platform layers
+M3HT4 is in early development. The immediate focus is to establish the framework model, refine public documentation, build a safe validation environment, and deliver one complete end-to-end scenario before expanding the catalog.
 
-```mermaid
-flowchart LR
-    Foundation[Infrastructure Foundation]
-    Network[Enterprise Networking]
-    Systems[Core Systems]
-    Telemetry[Detection Telemetry]
-    Validation[Adversary Emulation]
-    Hunting[Threat Hunting]
-    Automation[Automation and AI]
-    Public[M3HT4.com]
-
-    Foundation --> Network --> Systems --> Telemetry --> Validation --> Hunting --> Automation --> Public
-```
-
-## Technology direction
-
-| Layer | Direction |
+| Workstream | Status |
 |---|---|
-| Virtualization | Proxmox VE, QEMU/KVM, LVM-Thin |
-| Identity | Windows Server, Active Directory, DNS |
-| Network security | OPNsense, managed switching, VLANs |
-| Endpoints | Windows, Linux, Kali |
-| Endpoint telemetry | Sysmon, Windows Event Forwarding |
-| Network telemetry | Zeek, Suricata |
-| SIEM | Wazuh or compatible stack |
-| Offensive security | Kali, controlled targets, pentest tooling, adversary emulation |
-| Validation | MITRE ATT&CK mapping, purple-team exercises, evidence collection |
-| Analytics | Python, Jupyter |
-| Automation | Bash, PowerShell, Python, APIs |
-| AI assistance | Local models for triage, reporting, and analysis |
+| Brand and refined project vision | ✅ Established |
+| Public documentation structure | 🟡 In progress |
+| Safe validation environment | 🟡 In progress |
+| Initial telemetry and hunting workflow | 🔵 Planned |
+| Initial adversary-emulation planning workflow | 🔵 Planned |
+| First complete purple-team scenario | 🔵 Planned |
+| Interactive M3HT4 web application | 🔵 Planned |
 
-[Read the technology strategy →](docs/technology-stack.md)
+See the [project status](docs/project-status.md) and [roadmap](docs/roadmap.md) for details.
 
 ## Documentation
 
-| Section | Contents |
+| Document | Purpose |
 |---|---|
-| [Documentation hub](docs/README.md) | Central navigation |
-| [Architecture](docs/architecture/README.md) | Physical, logical, storage, trust boundaries |
-| [Infrastructure v1.0](docs/project-log/phase-1-infrastructure.md) | Build and recovery case study |
-| [Backup and recovery](docs/recovery/backup-and-recovery.md) | Resilience design |
-| [Publication safety](docs/security/publication-safety.md) | Public/private data separation |
-| [Threat model](docs/security/public-repository-threat-model.md) | Public repository risk controls |
-| [Roadmap](docs/roadmap.md) | Planned phases |
-| [M3HT4.com](website/README.md) | Public website strategy |
+| [Documentation hub](docs/README.md) | Start here for organized project documentation |
+| [Platform vision](docs/platform-vision.md) | Product definition, boundaries, users, and long-term direction |
+| [Operating model](docs/operations-model.md) | How Blue, Red, and Purple teams use the framework together |
+| [Roadmap](docs/roadmap.md) | Incremental delivery plan |
+| [Project status](docs/project-status.md) | Current progress and next milestone |
+| [Technology strategy](docs/technology-stack.md) | Technology selection principles without locking the framework to one vendor |
 
-## Security-first publication model
+## Development philosophy
 
-### Public repository
-
-- Sanitized diagrams
-- Reusable documentation
-- Detection and automation examples
-- Lessons learned
-- Generic configuration templates
-- Portfolio-ready case studies
-
-### Private operations repository
-
-- Real internal addressing
-- Detailed inventory
-- Environment-specific maintenance and recovery notes
-- Operational diagrams
-- Change records
-
-### Never stored in Git
-
-- Credentials, tokens, private keys, cookies, or recovery codes
-- VPN secrets or certificate private keys
-- Public origin addresses or management endpoints
-- Authentication databases or password hashes
-- Raw VM backups, memory dumps, disk images, or private packet captures
-
-## Repository map
-
-```text
-M3HT4/
-├── .github/                 GitHub workflows and community templates
-├── assets/
-│   ├── branding/            Official visual identity
-│   └── cards/               README navigation visuals
-├── docs/
-│   ├── architecture/        Platform and trust-boundary design
-│   ├── project-log/         Milestone case studies
-│   ├── recovery/            Backup and resilience
-│   └── security/            Publication safety
-├── examples/                Sanitized reusable examples
-├── website/                 M3HT4.com planning
-├── mkdocs.yml               Documentation-site configuration
-└── README.md
-```
-
-## Engineering principles
-
-1. **Reliability over speed**
-2. **Purpose over unnecessary complexity**
-3. **Automation over repetitive manual work**
-4. **Understand before implementing**
-5. **Document while building**
-6. **Keep public content sanitized**
-7. **Make critical systems recoverable**
-8. **Validate assumptions through testing**
+- Build one useful workflow before building a large platform.
+- Prefer curated depth over an unmaintainable data catalog.
+- Make every feature serve at least one team and one pillar.
+- Keep the public experience separate from private infrastructure.
+- Use automation to reduce repetitive work, not to replace human judgment.
+- Document assumptions, evidence, limitations, and lessons learned.
+- Keep implementation simple enough to maintain by a small team.
 
 ## Responsible use
 
-M3HT4 is intended for authorized blue-team training, red-team and penetration-testing practice, purple-team validation, detection engineering, threat hunting, and controlled security testing. Never test systems without explicit permission.
+Use M3HT4 only in systems you own or are explicitly authorized to test. The framework is designed to improve collaboration, analysis, detection, and controlled emulation—not to enable unauthorized access.
 
 ---
 
-<div align="center">
-  <img src="assets/branding/m3ht4-icon.png" alt="M3HT4 eagle icon" width="150">
-
-### [M3HT4.com](https://www.m3ht4.com)
-
-**Built with purpose. Secured with discipline. Shared to empower.**
-</div>
+<p align="center">
+  <strong>One terrain. Three teams. Four ways to improve.</strong><br>
+  <em>Build. Defend. Hunt. Evolve.</em>
+</p>

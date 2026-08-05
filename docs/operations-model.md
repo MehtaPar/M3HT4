@@ -1,56 +1,87 @@
-# Blue, Red, and Purple Team Operations Model
+# Operating Model
 
-M3HT4 is designed for complementary offensive and defensive workflows.
+M3HT4 uses one shared scenario to support three team perspectives and four operational pillars.
 
-## Blue-team outcomes
+![Three teams and four pillars](assets/diagrams/team-pillar-loop.svg)
 
-- Collect endpoint and network telemetry
-- Engineer and tune detections
-- Investigate alerts and suspicious activity
-- Practice threat hunting
-- Validate segmentation and identity controls
-- Exercise incident-response and recovery procedures
-- Produce defensible investigation reports
-
-## Red-team and pentest outcomes
-
-- Perform authorized reconnaissance and enumeration
-- Validate vulnerabilities safely
-- Practice exploitation in controlled systems
-- Exercise privilege escalation and lateral movement
-- Analyze attack paths
-- Collect evidence and document findings
-- Produce clear remediation-focused pentest reports
-
-## Purple-team outcomes
-
-- Map exercises to MITRE ATT&CK
-- Confirm whether activity generated expected telemetry
-- Measure which controls detected or prevented techniques
-- Tune detections and network policy
-- Re-run scenarios to validate improvements
-- Preserve repeatable exercise plans and findings
+## Core engagement loop
 
 ```mermaid
 sequenceDiagram
-    participant Red as Red Team / Pentest
-    participant Target as Controlled Target
-    participant Sensors as Telemetry and Sensors
-    participant Blue as Blue Team
-    participant Improve as Control Improvement
+    participant R as Red Team
+    participant X as Controlled Scenario
+    participant B as Blue Team
+    participant P as Purple Team
 
-    Red->>Target: Execute authorized technique
-    Target->>Sensors: Generate endpoint and network evidence
-    Sensors->>Blue: Events, alerts, and context
-    Blue->>Blue: Investigate and document
-    Blue->>Improve: Tune detection or control
-    Improve-->>Red: Re-test updated environment
+    R->>P: Define objective, behavior, and safety controls
+    P->>B: Agree on expected telemetry and success criteria
+    R->>X: Execute or model authorized activity
+    X-->>B: Produce representative evidence
+    B->>B: Hunt, investigate, and evaluate detections
+    B->>P: Share findings, gaps, and confidence
+    R->>P: Compare intended behavior with observed evidence
+    P->>R: Improve emulation plan
+    P->>B: Improve detections and procedures
 ```
 
-## Guardrails
+## Scenario package
 
-- Testing is limited to systems owned by the operator or explicitly authorized
-- Offensive networks are segmented from management and household systems
-- Potentially destructive actions require snapshots, backups, and recovery plans
-- Public documentation uses sanitized examples
-- Real access paths, credentials, and exploitable operational details remain private
+Each mature M3HT4 scenario should be a small, maintainable package rather than a large data dump.
+
+| Component | Purpose |
+|---|---|
+| Scenario overview | Explains the objective, scope, assumptions, and expected learning value |
+| Behavior map | Describes relevant adversary behavior using neutral, reusable terminology |
+| Data guide | Identifies representative sources, important fields, and known limitations |
+| Hunt path | Provides questions and pivots without replacing analyst reasoning |
+| Detection notes | Captures visibility opportunities, validation ideas, and tuning considerations |
+| Emulation plan | Defines authorized steps, prerequisites, expected evidence, and stop conditions |
+| Purple plan | Connects objectives, actions, data, detections, and success criteria |
+| Findings template | Records evidence, confidence, gaps, lessons learned, and improvements |
+
+## Role-based outcomes
+
+### Blue Team outcome
+
+A defensible investigation package containing:
+
+- hypothesis;
+- data sources used;
+- pivots and timeline;
+- evidence and counter-evidence;
+- conclusion and confidence;
+- detection or visibility recommendations.
+
+### Red Team outcome
+
+A controlled emulation plan containing:
+
+- objective;
+- assumptions and prerequisites;
+- behavior to emulate;
+- safety boundaries and stop conditions;
+- expected host, identity, network, or application evidence;
+- success and failure criteria.
+
+### Purple Team outcome
+
+An engagement package containing:
+
+- agreed objectives;
+- test sequence;
+- expected versus observed evidence;
+- detection and process gaps;
+- prioritized improvements;
+- retest plan.
+
+## Quality checks
+
+Before publishing a scenario, confirm that:
+
+- it adds value to at least two teams and clearly supports the third;
+- it maps to one or more pillars without duplicating existing content;
+- representative data is sanitized and legally publishable;
+- instructions cannot accidentally target unauthorized systems;
+- claims distinguish observed facts from assumptions;
+- outputs remain useful without the private lab;
+- the maintenance burden is reasonable.

@@ -1,45 +1,23 @@
 # Changelog
 
-All notable public milestones and repository improvements are documented here.
+All notable public changes to M3HT4 are documented here.
 
-## [Unreleased]
-
-### Planned
-
-- Enterprise networking documentation
-- OPNsense deployment case study
-- Segmentation and trust-boundary validation
-- Detection-engineering content
-
-## [1.1.0] — Flagship repository upgrade
-
-### Added
-
-- Explicit blue-team, red-team / pentest, and purple-team operating model
-- Dedicated operations-model documentation
-- Balanced offensive and defensive capability roadmap
-- Official M3HT4 branding throughout the repository
-- Visual README navigation cards
-- MkDocs Material documentation site
-- GitHub Pages publishing workflow
-- Markdown quality checks
-- Secret scanning
-- Link checking
-- Dependabot for GitHub Actions
-- CODEOWNERS template
-- Social preview image
-- Improved documentation navigation
+## Unreleased
 
 ### Changed
 
-- Reworked README into a product-style project landing page
-- Improved project status, architecture, and publication-safety presentation
+- Refined the project identity to **M3HT4 — Modern Hunting Terrain**.
+- Established the public brand architecture: **Built for 3 Teams. Powered by 4 Pillars.**
+- Defined the three teams as Blue, Red, and Purple.
+- Defined the four pillars as Hunt, Detect, Emulate, and Train.
+- Reframed M3HT4 from an infrastructure-first cyber range into an interactive cybersecurity framework supported by a private validation environment.
+- Clarified that M3HT4 helps teams understand security data, conduct threat hunting, build adversary-emulation plans, validate detections, and plan purple-team engagements.
+- Added a curated, lightweight content strategy rather than an exhaustive CVE or threat-data catalog.
+- Clarified the role of AI as optional internal assistance rather than the public product identity.
+- Updated the README, documentation hub, platform vision, operating model, project status, roadmap, technology strategy, website direction, and documentation-site configuration.
+- Added new public diagrams and the updated M3HT4 banner.
 
-## [1.0.0] — Infrastructure foundation
+### Security
 
-- Proxmox foundation
-- Storage-role separation
-- Identity-services restoration
-- Validated disaster recovery
-- Golden snapshot
-- Automated independent backups
+- Reinforced separation between the public framework and private infrastructure.
+- Kept environment-specific identifiers, credentials, endpoints, and raw private data out of the public update.

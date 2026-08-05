@@ -1,55 +1,42 @@
 # M3HT4 Documentation Hub
 
-Welcome to the public documentation for M3HT4.
+<p align="center">
+  <img src="assets/diagrams/m3ht4-framework.svg" alt="M3HT4 framework overview" width="900">
+</p>
 
-The documentation is organized around capabilities and project milestones so readers can quickly understand what exists, why it exists, and what comes next.
+M3HT4 is **Modern Hunting Terrain**: an interactive cybersecurity framework built for Blue, Red, and Purple teams and organized around four pillars—Hunt, Detect, Emulate, and Train.
 
-## Quick navigation
+This documentation explains the project as a public framework rather than as a private home-lab inventory. Infrastructure details are included only when they teach a reusable design or validation lesson.
 
-### Architecture
+## Start here
 
-- [Architecture overview](architecture/README.md)
-- [Physical topology](architecture/physical-topology.md)
-- [Logical topology](architecture/logical-topology.md)
-- [Storage architecture](architecture/storage-layout.md)
-- [Trust boundaries](architecture/trust-boundaries.md)
-
-### Operations
-
-- [Blue, red, and purple team model](operations-model.md)
-
-### Operations and recovery
-
-- [Backup and recovery](recovery/backup-and-recovery.md)
-- [Recovery principles](recovery/recovery-principles.md)
-
-### Project milestones
-
-- [Infrastructure v1.0](project-log/phase-1-infrastructure.md)
-- [Project status](project-status.md)
-- [Roadmap](roadmap.md)
-
-### Technology and design
-
-- [Technology strategy](technology-stack.md)
-- [Naming and documentation conventions](standards.md)
-
-### Security
-
-- [Publication safety standard](security/publication-safety.md)
-- [Threat model for public documentation](security/public-repository-threat-model.md)
-
-## How to read this project
-
-New readers should start with:
-
-1. [README](../README.md)
-2. [Architecture overview](architecture/README.md)
-3. [Infrastructure v1.0](project-log/phase-1-infrastructure.md)
+1. [Platform vision](platform-vision.md)
+2. [Operating model](operations-model.md)
+3. [Project status](project-status.md)
 4. [Roadmap](roadmap.md)
+5. [Technology strategy](technology-stack.md)
 
-Practitioners interested in resilience should start with:
+## Framework documents
 
-1. [Backup and recovery](recovery/backup-and-recovery.md)
-2. [Recovery principles](recovery/recovery-principles.md)
-3. [Infrastructure v1.0 lessons learned](project-log/phase-1-infrastructure.md)
+| Document | What it answers |
+|---|---|
+| [Platform vision](platform-vision.md) | What is M3HT4, who is it for, and what is intentionally out of scope? |
+| [Operating model](operations-model.md) | How do Blue, Red, and Purple teams work through the same scenario? |
+| [Project status](project-status.md) | What exists today and what is the next concrete milestone? |
+| [Roadmap](roadmap.md) | How will the framework grow without becoming overwhelming or unmaintainable? |
+| [Technology strategy](technology-stack.md) | How are tools selected while staying safe, maintainable, and vendor-neutral? |
+
+## Existing technical documentation
+
+The repository may also contain architecture, recovery, security, and project-log documents created while building the supporting environment. Those records remain useful as sanitized engineering case studies, but they should not be interpreted as the product definition.
+
+## Public documentation standard
+
+Every public artifact should be:
+
+- understandable without access to the private environment;
+- sanitized of credentials, identifiers, endpoints, and operational secrets;
+- based on authorized and controlled activity;
+- concise enough to maintain;
+- explicit about assumptions and limitations;
+- legally reusable or properly attributed under compatible licenses.
