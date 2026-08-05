@@ -1,22 +1,15 @@
 # Security Policy
 
+## Reporting a vulnerability
+
+Please do not disclose a suspected vulnerability in a public issue.
+
+Use GitHub's **private vulnerability reporting** feature for this repository when available. Include a clear description, affected files or behavior, reproduction details that are safe to share, and the potential impact.
+
 ## Scope
 
-This repository contains sanitized public documentation and reusable examples for M3HT4.
+Security reports should relate to code or public artifacts maintained in this repository. Reports about third-party products, hypothetical infrastructure, or intentionally generalized diagrams are outside scope unless M3HT4 introduced a specific vulnerability.
 
-## Reporting an issue
+## Sensitive information
 
-Do not open a public issue containing secrets, access details, private infrastructure information, or exploit material tied to a real environment.
-
-For documentation safety concerns, provide only the minimum information necessary and redact operational details.
-
-## Never commit
-
-- Passwords, API keys, tokens, cookies, or recovery codes
-- SSH, VPN, TLS, DNS, or signing private keys
-- Public origin IP addresses or management endpoints
-- Registrar, DNS provider, tunnel, or hosting credentials
-- Authentication databases or password hashes
-- Raw backups, disk images, memory dumps, or private packet captures
-- Service tags, serial numbers, UUIDs, or MAC addresses
-- Live firewall/NAT rules that expose services
+Do not include real credentials, tokens, private keys, personal data, or live infrastructure details in a report. Redact sensitive values and provide only the minimum evidence necessary.

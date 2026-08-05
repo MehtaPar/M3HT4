@@ -1,14 +1,16 @@
 ## Summary
 
-Describe the change and why it matters.
+Describe what changed and why.
 
-## Validation
+## M3HT4 alignment
 
-- [ ] Content is technically accurate
-- [ ] Links and diagrams render correctly
-- [ ] Examples are sanitized
-- [ ] No credentials, tokens, keys, cookies, or recovery codes
-- [ ] No public origin or management endpoints
-- [ ] No live VPN, firewall, or authentication details
-- [ ] Screenshots were reviewed for sensitive data
-- [ ] Documentation is readable without prior context
+- Team(s): Blue / Red / Purple
+- Pillar(s): Hunt / Detect / Emulate / Train
+
+## Review checklist
+
+- [ ] Public-safety review completed
+- [ ] No secrets or sensitive infrastructure details
+- [ ] Licensing and attribution reviewed
+- [ ] Documentation and links updated
+- [ ] Change is scoped and maintainable

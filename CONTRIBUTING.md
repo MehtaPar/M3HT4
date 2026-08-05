@@ -1,22 +1,20 @@
 # Contributing to M3HT4
 
-Thank you for helping improve M3HT4.
+M3HT4 is in early development. Contributions that improve clarity, safety, documentation, reusable templates, or validated framework workflows are welcome.
 
-## Contribution principles
+## Before contributing
 
-- Keep content readable and purposeful
-- Explain the operational or learning value
-- Use sanitized examples
-- Do not submit secrets or live infrastructure details
-- Keep all testing clearly authorized
-- Prefer diagrams when they materially improve understanding
+- Open an issue before proposing a large structural change.
+- Keep content vendor-neutral where practical.
+- Use only systems and data you are authorized to test or share.
+- Do not submit secrets, private infrastructure details, proprietary code, malware, or restricted data.
+- Confirm third-party material is compatible with the repository license and properly attributed.
 
-## Before opening a pull request
+## Pull-request checklist
 
-- [ ] No credentials, keys, tokens, or cookies
-- [ ] No public origin or management endpoints
-- [ ] No live VPN or firewall access details
-- [ ] No serial numbers, UUIDs, MAC addresses, or service tags
-- [ ] Screenshots reviewed and sanitized
-- [ ] Links work
-- [ ] Documentation is understandable without prior conversation context
+- [ ] The change supports at least one M3HT4 team or pillar.
+- [ ] Public-safety review is complete.
+- [ ] No credentials, private endpoints, or sensitive environment details are included.
+- [ ] Documentation and navigation are updated.
+- [ ] Third-party licenses and attribution were reviewed.
+- [ ] The change is scoped, maintainable, and clearly explained.

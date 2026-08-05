@@ -1,13 +1,9 @@
 # Support
 
-M3HT4 is a learning and engineering project rather than a commercial support service.
+M3HT4 is an early-stage open-source project and does not currently provide guaranteed support or service-level commitments.
 
-Before asking for help:
+- Use **GitHub Issues** for reproducible bugs, documentation problems, and focused feature proposals.
+- Use **GitHub Discussions** if enabled for broader questions and ideas.
+- Use private vulnerability reporting for security issues.
 
-1. Review the documentation hub
-2. Check existing issues
-3. Remove sensitive information
-4. Describe the expected and actual behavior
-5. Include only the minimum sanitized output necessary
-
-Do not post credentials, keys, tokens, public origin addresses, management URLs, or private infrastructure configurations.
+Do not post credentials, private logs, internal network details, or sensitive data in public issues.

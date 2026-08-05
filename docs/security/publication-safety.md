@@ -1,69 +1,30 @@
-# Public Documentation Standard
+# Publication Safety
 
-This document defines the standards for information published in the public M3HT4 repository.
+This repository is public. Contributions must be reviewed for security, privacy, legal, and licensing concerns before they are pushed.
 
-Its purpose is to keep documentation educational, reproducible, professional, and safe to share while protecting operational details and respecting intellectual property.
+## Never publish
 
-## Documentation Philosophy
+- Credentials, passwords, tokens, recovery codes, or authentication cookies.
+- Private keys, certificates containing private material, or VPN secrets.
+- Live public endpoints or firewall/NAT rules that expose services.
+- Real internal addressing combined with detailed topology or management paths.
+- Device serial numbers, account identifiers, or environment-specific access details.
+- Raw private captures, logs, screenshots, or exports containing sensitive information.
+- Proprietary code, restricted material, or third-party content without appropriate permission.
 
-M3HT4 is committed to open technical documentation that:
+## Public-safe alternatives
 
-- Shares engineering knowledge
-- Demonstrates implementation approaches
-- Supports reproducibility where appropriate
-- Protects environment-specific operational information
-- Respects software licenses and intellectual property
+- Use placeholders and generalized diagrams.
+- Publish sanitized excerpts rather than raw exports.
+- Describe architecture logically rather than reproducing the live environment.
+- Use fictional example values and clearly label them.
+- Record third-party licenses and attribution where required.
 
-## Approved Public Content
+## Before a public commit
 
-The public repository may include:
-
-- Sanitized architecture diagrams
-- Generic configuration examples
-- Original documentation and automation
-- Detection and threat-hunting content
-- Project milestones and lessons learned
-- Public standards and properly licensed resources
-- Portfolio-ready case studies
-
-## Restricted Information
-
-The following information is intentionally maintained outside the public repository:
-
-- Credentials, tokens, private keys, and recovery codes
-- Public origin addresses and management endpoints
-- VPN secrets and authentication material
-- Real firewall rules that expose services
-- Internal inventories and environment-specific identifiers
-- Raw backups, disk images, memory dumps, and private packet captures
-
-## Licensing and Attribution
-
-M3HT4 prioritizes original engineering and documentation.
-
-When open-source software, public standards, or community resources are used, applicable licensing and attribution requirements will be respected.
-
-The project does not intentionally include proprietary code, confidential information, or copyrighted material outside its permitted use.
-
-## Documentation Review Checklist
-
-Before publishing:
-
-- Confirm examples are sanitized
-- Review screenshots for sensitive information
-- Remove unnecessary hostnames, addresses, identifiers, and endpoints
-- Confirm code and resources are properly licensed
-- Verify links and references
-- Ensure the content is understandable without private context
-
-## Guiding Principles
-
-Public documentation should be:
-
-- Accurate
-- Readable
-- Reproducible
-- Vendor-neutral where practical
-- Security-conscious
-- Respectful of intellectual property
-- Valuable to the cybersecurity community
+1. Review every changed file in GitHub Desktop.
+2. Confirm GitHub secret scanning and push protection report no issues.
+3. Search for credentials, internal identifiers, addresses, and private endpoints.
+4. Confirm images do not reveal browser tabs, account names, QR codes, or infrastructure details.
+5. Verify licensing and attribution.
+6. Confirm wording matches the current M3HT4 vision.

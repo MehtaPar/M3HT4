@@ -1,9 +1,7 @@
 site_name: M3HT4 — Modern Hunting Terrain
 site_description: An interactive cybersecurity framework for Blue, Red, and Purple teams.
-site_url: https://m3ht4.com/
 repo_url: https://github.com/MehtaPar/M3HT4
 repo_name: MehtaPar/M3HT4
-
 theme:
   name: material
   features:
@@ -11,43 +9,40 @@ theme:
     - navigation.sections
     - navigation.top
     - content.code.copy
-    - content.tooltips
   palette:
-    - scheme: slate
-      primary: black
-      accent: light blue
-  icon:
-    repo: fontawesome/brands/github
-
+    scheme: slate
+    primary: blue
+    accent: cyan
+nav:
+  - Home: index.md
+  - Framework:
+      - Vision: framework/vision.md
+      - Operating Model: framework/operating-model.md
+  - Teams:
+      - Blue Team: teams/blue-team.md
+      - Red Team: teams/red-team.md
+      - Purple Team: teams/purple-team.md
+  - Pillars:
+      - Hunt: pillars/hunt.md
+      - Detect: pillars/detect.md
+      - Emulate: pillars/emulate.md
+      - Train: pillars/train.md
+  - Architecture:
+      - Reference Architecture: architecture/reference-architecture.md
+      - Technology Strategy: architecture/technology-strategy.md
+  - Roadmap:
+      - Project Status: roadmap/status.md
+      - Roadmap: roadmap/roadmap.md
+  - Safety: security/publication-safety.md
 markdown_extensions:
   - admonition
   - attr_list
-  - md_in_html
   - tables
   - toc:
       permalink: true
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
-nav:
-  - Home: index.md
-  - Framework:
-      - Platform Vision: platform-vision.md
-      - Operating Model: operations-model.md
-      - Project Status: project-status.md
-      - Roadmap: roadmap.md
-      - Technology Strategy: technology-stack.md
-  - Existing Documentation:
-      - Documentation Hub: README.md
-      - Architecture: architecture/README.md
-      - Recovery: recovery/backup-and-recovery.md
-      - Security: security/publication-safety.md

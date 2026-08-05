@@ -1,50 +1,58 @@
-# Secrets
+# Secrets and local environment
 .env
 .env.*
 !.env.example
-*.key
 *.pem
+*.key
 *.pfx
 *.p12
-*.jks
-*.keystore
-secrets/
-private/
-credentials.*
-environment.local.*
+*.ovpn
+*.kdbx
+id_rsa
+id_ed25519
 
-# Hosting, DNS, and provider state
-.cloudflare/
-.wrangler/
-.vercel/
-.netlify/
-.terraform/
-*.tfstate
-*.tfstate.*
-dns.local.*
-tunnel.local.*
+# Logs, caches, and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.cache/
 
-# Operational artifacts
-*.vma
-*.vma.zst
-*.qcow2
-*.raw
-*.img
+# Virtual environments
+.venv/
+venv/
+
+# Build output
+site/
+dist/
+build/
+
+# Infrastructure images, exports, and captures
 *.iso
+*.img
+*.raw
+*.qcow2
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
 *.pcap
 *.pcapng
 *.cap
 *.dump
-*.dmp
-*.bak
 *.backup
+
+# Archives and generated reports
+*.zip
+*.7z
 *.tar
 *.tar.gz
-
-# Logs and local state
-*.log
-tmp/
-temp/
-.cache/
-.DS_Store
-Thumbs.db
+secret-scan-results*
+gitleaks-report*

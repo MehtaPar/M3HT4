@@ -1,0 +1,31 @@
+name: Feature request
+description: Propose a focused improvement to the M3HT4 framework.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+    validations:
+      required: true
+  - type: dropdown
+    id: team
+    attributes:
+      label: Primary team
+      options: [Blue Team, Red Team, Purple Team, Cross-team]
+    validations:
+      required: true
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: Primary pillar
+      options: [Hunt, Detect, Emulate, Train, Cross-pillar]
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+    validations:
+      required: true
