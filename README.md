@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/branding/m3ht4-banner.png" alt="M3HT4 — Modern Hunting Terrain" width="100%">
+  <img src="assets/branding/m3ht4-banner.jpg" alt="M3HT4 — Modern Hunting Terrain" width="100%">
 </p>
 
 <h1 align="center">M3HT4 — Modern Hunting Terrain</h1>
