@@ -31,17 +31,39 @@
 
 ## What is M3HT4?
 
-**M3HT4 (Modern Hunting Terrain)** is a curated cybersecurity framework that helps **Blue, Red, and Purple teams** understand the same security data, connect adversary behavior to defender-visible evidence, and build stronger threat-hunting and engagement plans.
+**M3HT4 (Modern Hunting Terrain)** is an interactive cybersecurity framework that helps **Blue, Red, and Purple teams** understand security data, investigate realistic attack scenarios, plan adversary emulation, validate detections, and continuously improve through shared, evidence-driven workflows.
+
+Unlike traditional cybersecurity resources that focus on a single discipline, M3HT4 connects offensive planning, defensive analysis, and collaborative validation into one repeatable process.
 
 The framework is intentionally designed to remain:
 
-- **curated** rather than becoming a massive CVE or threat-data dump;
-- **lightweight** enough for a small team to maintain;
-- **vendor-neutral** where practical;
-- **public-safe** and separated from private infrastructure;
-- **useful across perspectives**, not limited to one role or tool.
+- 🎯 **Scenario-driven** instead of becoming a massive CVE or threat-intelligence repository.
+- 🔵 **Built for Blue, Red, and Purple teams** from the beginning.
+- 🔎 **Focused on evidence and behavior**, not just tools or exploits.
+- 📚 **Lightweight and maintainable**, prioritizing quality over quantity.
+- 🌐 **Vendor-neutral** where practical.
+- 🔒 **Public-safe**, while using a private validation environment to verify scenarios before publication.
 
-<p align="center"><strong>Built for 3 Teams. Powered by 4 Pillars.</strong></p>
+> **One terrain. Three teams. Four paths to improvement.**
+
+## What can I do with M3HT4?
+
+Whether you're defending an environment, planning an engagement, or learning how attacks appear in real telemetry, M3HT4 is designed to guide you through the complete workflow.
+
+| Team | Example use cases |
+|------|-------------------|
+| 🔵 **Blue Team** | Explore realistic telemetry, build hunt hypotheses, validate detections, and understand attacker behavior. |
+| 🔴 **Red Team** | Design authorized adversary-emulation plans, understand expected defender visibility, and prepare Purple-team engagements. |
+| 🟣 **Purple Team** | Compare intent with observed evidence, identify gaps, validate coverage, and document improvements. |
+
+As the framework evolves, users will be able to:
+
+- 🔎 Investigate guided threat-hunting scenarios
+- 📊 Explore how attacker activity appears in security data
+- 🛡️ Build and validate detection logic
+- ♟️ Develop adversary-emulation plans
+- 🟣 Conduct Purple-team reviews
+- 📘 Learn through reusable scenarios and walkthroughs
 
 ```mermaid
 flowchart TB
@@ -165,14 +187,27 @@ flowchart LR
 
 ---
 
-## What the project will deliver
+## The Product Vision
 
-M3HT4 is being developed in layers:
+M3HT4 is being developed in carefully validated stages.
 
-1. **Safe reference environment** — generate and validate realistic, controlled evidence.
-2. **Curated knowledge model** — connect behavior, telemetry, hunting questions, detections, and emulation planning.
-3. **Reusable public artifacts** — publish sanitized templates, examples, walkthroughs, and case studies.
-4. **Interactive platform** — guide users through validated scenarios without exposing the private environment.
+### Phase 1 — Framework
+
+Establish the public operating model, documentation, and reusable methodology.
+
+### Phase 2 — Scenarios
+
+Publish complete, evidence-driven scenarios that demonstrate the framework from multiple team perspectives.
+
+### Phase 3 — Knowledge Base
+
+Build a curated library of scenarios, hunt workflows, detection ideas, and emulation plans.
+
+### Phase 4 — Interactive Platform
+
+Transform the framework into an interactive web application where users can explore scenarios, understand evidence, develop hunt plans, and build Purple-team engagements.
+
+> The private validation environment exists to develop and verify scenarios. The public M3HT4 framework is the product.
 
 > [!NOTE]
 > The private reference lab supports development and validation, but **the lab is not the product**. M3HT4 should remain useful without revealing or requiring access to private infrastructure.
@@ -197,16 +232,16 @@ gantt
     axisFormat  %b %Y
 
     section Foundation
-    Identity and framework definition    :done, f1, 2026-08-01, 14d
-    Public documentation baseline        :active, f2, 2026-08-08, 30d
+    Framework Identity                   :done, f1, 2026-08-01, 30d
+    Documentation Baseline               :active, f2, 2026-08-08, 30d
 
     section Validation
-    First evidence-centered scenario     :v1, after f2, 45d
-    Reusable artifact templates          :v2, after v1, 30d
+    First Scenario                       :v1, after f2, 45d
+    Artifact Templates                   :v2, after v1, 30d
 
     section Platform
-    Curated scenario library             :p1, after v2, 60d
-    Interactive application prototype    :p2, after p1, 90d
+    Scenario Library                     :p1, after v2, 60d
+    Interactive Platform                 :p2, after p1, 90d
 ```
 
 <p align="center">
@@ -248,6 +283,33 @@ Public content emphasizes:
 | [Publication safety](docs/security/publication-safety.md) | Public-release rules |
 | [M3HT4.com plan](website/README.md) | Website and future application direction |
 
+## Where M3HT4 is going
+
+```mermaid
+flowchart LR
+
+A["📘 Learn"] --> B["🔎 Hunt"]
+
+B --> C["🛡️ Detect"]
+
+C --> D["♟️ Emulate"]
+
+D --> E["🟣 Review"]
+
+E --> F["📈 Improve"]
+
+F --> A
+
+style A fill:#2563eb,color:#fff
+style B fill:#0ea5e9,color:#fff
+style C fill:#16a34a,color:#fff
+style D fill:#dc2626,color:#fff
+style E fill:#7c3aed,color:#fff
+style F fill:#f59e0b,color:#fff
+```
+
+Every completed scenario should strengthen future investigations, improve detections, refine adversary-emulation plans, and expand the collective knowledge available to Blue, Red, and Purple teams.
+
 ## Repository structure
 
 ```text
@@ -275,7 +337,7 @@ M3HT4/
 - Document assumptions, evidence, limitations, and lessons learned.
 - Favor simple, maintainable architecture that a small team can operate.
 
----
+<p align="center">
 
 <p align="center">
   <img src="assets/branding/icon.png" alt="M3HT4 Logo" width="180">
@@ -284,30 +346,33 @@ M3HT4/
 <h2 align="center">Modern Hunting Terrain</h2>
 
 <p align="center">
-  <strong>Built for 3 Teams. Powered by 4 Pillars.</strong>
+  <strong>One Terrain. Three Teams. Four Pillars.</strong>
 </p>
 
 <p align="center">
-  <em>Learn the data. Hunt the behavior. Plan the emulation. Improve together.</em>
+  <em>Helping Blue, Red, and Purple teams build shared understanding through evidence-driven cybersecurity.</em>
 </p>
 
 <p align="center">
-
-🔵 <strong>Blue Team</strong> &nbsp;&nbsp;•&nbsp;&nbsp;
-🔴 <strong>Red Team</strong> &nbsp;&nbsp;•&nbsp;&nbsp;
-🟣 <strong>Purple Team</strong>
-
-<br><br>
-
-🔎 <strong>Hunt</strong> &nbsp;&nbsp;•&nbsp;&nbsp;
-🛡️ <strong>Detect</strong> &nbsp;&nbsp;•&nbsp;&nbsp;
-♟️ <strong>Emulate</strong> &nbsp;&nbsp;•&nbsp;&nbsp;
-📘 <strong>Train</strong>
-
+  🔵 <strong>Blue Team</strong>
+  &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+  🔴 <strong>Red Team</strong>
+  &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+  🟣 <strong>Purple Team</strong>
 </p>
 
----
-
 <p align="center">
-Made with ❤️ for the cybersecurity community.
+  🔎 <strong>Hunt</strong>
+  &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+  🛡️ <strong>Detect</strong>
+  &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+  ♟️ <strong>Emulate</strong>
+  &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+  📘 <strong>Train</strong>
+</p>
+
+<br>
+
+<p align="center"> 
+  ⭐ <b>If you find M3HT4 useful, consider starring the repository.</b> 
 </p>
