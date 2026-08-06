@@ -1,58 +1,94 @@
 # Operating Model
 
-M3HT4 is built for **three teams** and powered by **four pillars**.
-
-## The three teams
+## Built for Three Teams
 
 ### Blue Team
 
-Blue-team users study representative evidence, develop hunt hypotheses, investigate behavior, validate visibility, and translate findings into improved detections or procedures.
+Blue teams use M3HT4 to:
+
+- understand available telemetry;
+- form focused hunt hypotheses;
+- investigate representative behavior;
+- validate visibility;
+- turn findings into detections or procedure improvements.
+
+**Representative outputs:** hunt plans, timelines, findings, pivots, detection ideas, visibility-gap notes.
 
 ### Red Team
 
-Red-team users connect objectives and adversary behavior to expected defender visibility. The emphasis is on safe planning, assumptions, evidence requirements, guardrails, and measurable outcomes.
+Red teams use M3HT4 to:
+
+- translate objectives into safe emulation plans;
+- understand defender visibility;
+- define expected evidence;
+- document guardrails and success criteria;
+- communicate execution intent clearly.
+
+**Representative outputs:** emulation plans, expected-evidence maps, guardrails, success criteria, engagement notes.
 
 ### Purple Team
 
-Purple-team users reconcile offensive intent with defensive evidence. They organize engagement plans, identify observability gaps, validate controls, and capture improvements.
+Purple teams use M3HT4 to:
 
-## The four pillars
+- align offensive intent with defensive evidence;
+- compare expected and observed outcomes;
+- validate coverage;
+- document gaps;
+- convert lessons into a measurable improvement backlog.
 
-### Hunt
+**Representative outputs:** engagement plans, coverage matrices, gap analyses, after-action reviews, improvement backlogs.
 
-Ask focused questions of telemetry and document the investigative path.
+## The Four Pillars
 
-### Detect
+| Pillar | Core question | Typical artifact |
+|---|---|---|
+| **Hunt** | What does the available evidence tell us? | Hunt plan, pivot record, timeline |
+| **Detect** | How can the behavior be identified consistently? | Detection record, test evidence, tuning notes |
+| **Emulate** | How can the behavior be represented safely and purposefully? | Emulation plan, guardrails, expected evidence |
+| **Train** | How can teams build repeatable understanding? | Exercise guide, walkthrough, lessons learned |
 
-Turn observable behavior into reusable, testable defensive logic.
-
-### Emulate
-
-Plan controlled adversary behavior with clear scope, evidence expectations, and safety controls.
-
-### Train
-
-Build practical understanding through guided scenarios, walkthroughs, templates, and reflection.
-
-## Shared scenario loop
+## Shared scenario lifecycle
 
 ```mermaid
-flowchart LR
-    Objective[Objective or behavior] --> Plan[Authorized plan and assumptions]
-    Plan --> Evidence[Expected and observed evidence]
-    Evidence --> Hunt[Hunt and investigation]
-    Hunt --> Validate[Detection and control validation]
-    Validate --> Improve[Documented improvement]
-    Improve --> Objective
+stateDiagram-v2
+    [*] --> Define
+    Define: Objective, scope, assumptions, safety
+    Define --> Map
+    Map: Behavior, telemetry, expected evidence
+    Map --> Emulate
+    Emulate: Authorized controlled activity
+    Emulate --> Hunt
+    Hunt: Investigate and validate visibility
+    Hunt --> Detect
+    Detect: Create, test, and tune logic
+    Detect --> Review
+    Review: Compare intent, evidence, and outcome
+    Review --> Improve
+    Improve: Plans, detections, procedures, learning
+    Improve --> Define
 ```
 
-## Scenario quality test
+## Core artifact relationships
 
-A mature M3HT4 scenario should answer:
+```mermaid
+erDiagram
+    SCENARIO ||--|| SCENARIO_BRIEF : defines
+    SCENARIO ||--o{ TEAM_WORKFLOW : contains
+    SCENARIO ||--|| EVIDENCE_MAP : predicts
+    SCENARIO ||--o| EMULATION_PLAN : authorizes
+    SCENARIO ||--o| HUNT_PLAN : investigates
+    SCENARIO ||--o{ DETECTION_RECORD : validates
+    SCENARIO ||--|| AFTER_ACTION_REVIEW : concludes
+    AFTER_ACTION_REVIEW ||--o{ IMPROVEMENT_ITEM : creates
+```
 
-1. What behavior or objective is being examined?
-2. What evidence should exist?
-3. How would a defender investigate it?
-4. What could be detected or validated?
-5. How would an authorized emulator plan it safely?
-6. What should a purple team measure and improve?
+## Quality standard
+
+A scenario is not complete merely because activity was executed. It is complete when:
+
+- the objective and authorization boundary are clear;
+- expected evidence is documented;
+- Blue-team investigation is reproducible;
+- detection opportunities and limitations are recorded;
+- Red-team intent and execution assumptions are understandable;
+- Purple-team outcomes produce measurable follow-up actions.

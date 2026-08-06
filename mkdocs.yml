@@ -1,48 +1,28 @@
 site_name: M3HT4 — Modern Hunting Terrain
-site_description: An interactive cybersecurity framework for Blue, Red, and Purple teams.
+site_description: An interactive cybersecurity framework for Blue, Red, and Purple
+  teams.
 repo_url: https://github.com/MehtaPar/M3HT4
-repo_name: MehtaPar/M3HT4
+nav:
+- Home: README.md
+- Framework:
+  - Platform Vision: framework/vision.md
+  - Operating Model: framework/operating-model.md
+- Architecture:
+  - Reference Architecture: architecture/reference-architecture.md
+  - Technology Strategy: architecture/technology-strategy.md
+- Roadmap:
+  - Project Status: roadmap/status.md
+  - Delivery Roadmap: roadmap/roadmap.md
+- Safety: security/publication-safety.md
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - content.code.copy
-  palette:
-    scheme: slate
-    primary: blue
-    accent: cyan
-nav:
-  - Home: index.md
-  - Framework:
-      - Vision: framework/vision.md
-      - Operating Model: framework/operating-model.md
-  - Teams:
-      - Blue Team: teams/blue-team.md
-      - Red Team: teams/red-team.md
-      - Purple Team: teams/purple-team.md
-  - Pillars:
-      - Hunt: pillars/hunt.md
-      - Detect: pillars/detect.md
-      - Emulate: pillars/emulate.md
-      - Train: pillars/train.md
-  - Architecture:
-      - Reference Architecture: architecture/reference-architecture.md
-      - Technology Strategy: architecture/technology-strategy.md
-  - Roadmap:
-      - Project Status: roadmap/status.md
-      - Roadmap: roadmap/roadmap.md
-  - Safety: security/publication-safety.md
+  - navigation.sections
+  - navigation.top
+  - search.suggest
 markdown_extensions:
-  - admonition
-  - attr_list
-  - tables
-  - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+- admonition
+- attr_list
+- tables
+- pymdownx.details
+- pymdownx.superfences

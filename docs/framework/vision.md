@@ -1,43 +1,64 @@
 # Platform Vision
 
-## Definition
+## Purpose
 
-M3HT4 is an interactive cybersecurity framework that helps Blue, Red, and Purple teams build shared familiarity with security data, threat hunting, adversary behavior, and purple-team engagement planning.
+M3HT4 creates a shared terrain where Blue, Red, and Purple teams can understand the same evidence from different operational perspectives.
 
-## The problem
+The framework connects:
 
-Security disciplines often work from different views of the same event:
+- adversary intent;
+- controlled behavior;
+- defender-visible telemetry;
+- hunt hypotheses;
+- detection opportunities;
+- engagement planning;
+- lessons learned.
 
-- Blue teams see telemetry, alerts, and investigations.
-- Red teams see objectives, actions, and paths.
-- Purple teams must reconcile intent with observable evidence.
+## Product definition
 
-M3HT4 creates a common terrain where those perspectives can be connected deliberately.
+> **M3HT4 is an interactive cybersecurity framework that helps Blue, Red, and Purple teams build shared familiarity with security data, threat hunting, adversary behavior, and Purple-team engagement planning.**
 
-## Product principles
+It is not primarily a course, a home-lab showcase, an exploit repository, or an exhaustive intelligence database.
 
-1. **Curated over exhaustive** — useful workflows are more valuable than an unmaintainable archive of every technique or vulnerability.
-2. **Evidence-centered** — scenarios connect behavior to expected and observed telemetry.
-3. **Cross-team by design** — each mature scenario should create value for Blue, Red, and Purple teams.
-4. **Safe and authorized** — examples emphasize controlled validation, planning, and defensible use.
-5. **Public-safe** — the framework does not require disclosure of the private environment used to validate it.
-6. **Vendor-neutral where practical** — concepts and artifacts should remain portable even when reference implementations use specific tools.
+## Primary audiences
 
-## What M3HT4 is not
+| Audience | Core need | M3HT4 response |
+|---|---|---|
+| Blue Team | Understand evidence and improve defensive coverage | Hunt and detection workflows |
+| Red Team | Build realistic, safe, visibility-aware plans | Emulation planning and expected-evidence mapping |
+| Purple Team | Connect intent, evidence, coverage, and improvement | Shared scenarios and after-action artifacts |
 
-- A public mirror of a private home-lab configuration.
-- A giant CVE, exploit, malware, or threat-actor database.
-- A replacement for professional authorization, governance, or rules of engagement.
-- An AI product whose value depends on generated content.
-- A finished production service today.
+## Distinguishing characteristics
 
-## Long-term outcome
+### Shared data perspective
 
-M3HT4 should make it easier to move from a behavior or objective to:
+The same scenario is viewed through Blue, Red, and Purple lenses instead of being documented separately for each role.
 
-- a hunt hypothesis;
-- expected telemetry;
-- a detection-validation plan;
-- an authorized emulation plan;
-- a purple-team engagement outline;
-- and documented lessons learned.
+### Evidence-centered design
+
+M3HT4 emphasizes what activity should look like in security data—not merely which action occurred.
+
+### Curated maintenance model
+
+Scenarios are added only when they are useful, validated, explainable, and maintainable.
+
+### Private validation, public framework
+
+A controlled private environment may generate evidence, but public users should not need access to that environment.
+
+## Value chain
+
+```mermaid
+flowchart LR
+    I["Adversary Intent"] --> B["Controlled Behavior"]
+    B --> T["Security Telemetry"]
+    T --> H["Threat Hunt"]
+    T --> D["Detection Validation"]
+    H --> P["Purple-Team Review"]
+    D --> P
+    P --> O["Improved Plans, Detections, Procedures, and Skills"]
+```
+
+## Long-term direction
+
+M3HT4.com will provide a polished public entry point and, over time, a guided interactive framework. GitHub remains the transparent source for documentation, templates, version history, issues, and contributions.

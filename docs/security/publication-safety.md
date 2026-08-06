@@ -1,27 +1,27 @@
-# Publication Safety Standard
+# Publication Safety
 
-M3HT4 is a public repository. Every contribution must be reviewed as though it will be indexed, copied, and retained permanently.
+M3HT4 is public. Every contribution should be reviewed as though it may be indexed, copied, and retained permanently.
 
 ## Safe to publish
 
-- generalized architectures and diagrams;
-- sanitized scenario descriptions;
-- placeholder addressing and identifiers;
+- generalized architectures;
+- sanitized examples and scenarios;
+- fictional or reserved identifiers;
 - vendor-neutral workflows;
-- original content or properly licensed resources;
+- original or properly licensed content;
 - lessons learned without identifying private systems or people.
 
 ## Keep private
 
 - credentials, tokens, API keys, private keys, and recovery codes;
-- authentication cookies and session material;
+- authentication cookies or session material;
 - real internal IP addresses, hostnames, domains, UUIDs, MAC addresses, or serial numbers;
-- VPN configurations, management paths, or firewall rules that expose access;
-- raw private packet captures, memory dumps, backups, or virtual-machine images;
+- VPN configuration, management paths, or firewall rules exposing access;
+- raw private packet captures, memory dumps, backups, or VM images;
 - cloud/account identifiers and private certificates;
 - environment-specific details that materially increase risk.
 
-## Example placeholders
+## Approved placeholder patterns
 
 ```text
 host.example.lab
@@ -31,11 +31,19 @@ AA:BB:CC:XX:XX:XX
 <REDACTED_TOKEN>
 ```
 
-## Before publishing
+## Publication workflow
 
-1. Review every changed file and image.
-2. Confirm no secret-scanning alerts are present.
-3. Search for environment-specific names and addresses.
-4. Confirm third-party code, data, and media are appropriately licensed.
-5. Verify the content supports the public M3HT4 vision.
-6. When uncertain, keep the information private until reviewed.
+```mermaid
+flowchart TD
+    A["Create or update content"] --> B["Review files and images"]
+    B --> C{"Secrets or private<br/>environment details?"}
+    C -- Yes --> D["Remove, redact, or keep private"]
+    D --> B
+    C -- No --> E{"Third-party code,<br/>data, or media?"}
+    E -- Yes --> F["Verify license and attribution"]
+    F --> G["Run secret and link checks"]
+    E -- No --> G
+    G --> H{"Supports the public<br/>M3HT4 vision?"}
+    H -- No --> I["Revise or do not publish"]
+    H -- Yes --> J["Commit and publish"]
+```

@@ -2,29 +2,36 @@
 
 M3HT4.com will become the polished public home for Modern Hunting Terrain.
 
-## Intended roles
+## Main website
 
-### Main website
+The main site will:
 
-- introduce M3HT4 to a broad audience;
-- explain the 3 Teams and 4 Pillars;
-- show validated use cases and project progress;
-- direct technical readers to GitHub and documentation.
+- explain the framework to a broad audience;
+- introduce the 3 Teams and 4 Pillars;
+- show validated scenarios and outcomes;
+- direct technical readers to GitHub;
+- establish a credible project and future business presence.
 
-### Future interactive framework
+## Future interactive framework
 
-- guide users through scenarios and evidence relationships;
-- provide Blue, Red, and Purple perspectives;
-- support hunt, detection, emulation, and training workflows;
-- remain lightweight, curated, and safe for public use.
+The interactive experience may eventually provide:
 
-## Relationship to GitHub
+- guided scenario navigation;
+- Blue, Red, and Purple perspectives;
+- behavior-to-evidence mapping;
+- hunt and detection planning;
+- adversary-emulation planning;
+- Purple-team engagement artifacts;
+- reusable learning paths.
 
-| GitHub | M3HT4.com |
-|---|---|
-| Source files and change history | Polished public experience |
-| Technical documentation | Guided explanation and discovery |
-| Issues and contributions | Interactive framework workflows |
-| Releases and templates | Demonstrations and scenario navigation |
+## Relationship between public surfaces
 
-The website should not expose the private validation environment or require users to access it.
+```mermaid
+flowchart LR
+    G["GitHub<br/>Source · Docs · Issues · Releases"] --> W["M3HT4.com<br/>Public Story · Discovery"]
+    G --> A["Interactive Framework<br/>Guided Workflows"]
+    W --> A
+    A --> G
+```
+
+GitHub remains the source of truth. M3HT4.com becomes the polished public experience. The private validation environment remains separate from both.

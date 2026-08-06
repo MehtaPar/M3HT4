@@ -1,36 +1,64 @@
 # Project Status
 
-**Stage:** Early development
+> [!WARNING]
+> M3HT4 is in early development. The current repository establishes the public identity, framework model, and delivery direction; it is not yet a mature hosted platform.
 
-## Established
+## Current maturity
 
-- M3HT4 identity: **Modern Hunting Terrain**.
-- Brand architecture: **3 Teams / 4 Pillars**.
-- Public-safe documentation boundaries.
-- Initial repository and documentation structure.
-- Private validation environment under active development.
+| Workstream | Status | Meaning |
+|---|:---:|---|
+| Modern Hunting Terrain identity | ✅ Established | Official name and public definition |
+| 3 Teams / 4 Pillars model | ✅ Established | Core organizational model |
+| Public/private safety boundary | ✅ Established | Publication rules and architecture separation |
+| Public documentation baseline | 🟡 In progress | Pages are being aligned and expanded |
+| Private validation environment | 🟡 In progress | Supports controlled evidence generation |
+| First complete scenario | 🔵 Planned | Next major public proof point |
+| Reusable artifact templates | 🔵 Planned | Follow the first validated scenario |
+| Interactive application | 🔵 Future | Built after workflows are proven useful |
 
-## In progress
+## Immediate next milestone
 
-- Refining the public documentation experience.
-- Completing foundational network and security segmentation work in the private validation environment.
-- Defining the first end-to-end scenario format.
+Publish one complete, sanitized scenario containing:
 
-## Next milestone
+- authorization and scope;
+- representative adversary behavior;
+- expected evidence;
+- a Blue-team hunt workflow;
+- detection-validation notes;
+- a Red-team emulation plan;
+- a Purple-team after-action review;
+- reusable lessons and improvement items.
 
-Deliver one complete, sanitized scenario that connects:
+## Readiness view
 
-1. a behavior or objective;
-2. expected telemetry;
-3. a Blue-Team hunt path;
-4. a detection-validation opportunity;
-5. a Red-Team emulation-plan template;
-6. a Purple-Team engagement plan;
-7. lessons learned and known limitations.
+```mermaid
+quadrantChart
+    title M3HT4 Workstream Readiness
+    x-axis Early --> Mature
+    y-axis Supporting --> Core
+    quadrant-1 Build Next
+    quadrant-2 Strengthen
+    quadrant-3 Defer
+    quadrant-4 Maintain
+    Identity: [0.75, 0.85]
+    Operating Model: [0.70, 0.90]
+    Documentation: [0.45, 0.75]
+    Validation Lab: [0.40, 0.65]
+    First Scenario: [0.20, 0.95]
+    Interactive App: [0.10, 0.55]
+```
 
-## Not yet available
+## Available today
 
-- Production web application.
-- Public live lab access.
-- Large scenario catalog.
-- Formal stable release.
+- clear public vision;
+- cross-team operating model;
+- reference architecture;
+- phased roadmap;
+- publication-safety standard.
+
+## Not available yet
+
+- mature scenario catalog;
+- production hosted application;
+- exhaustive threat or vulnerability database;
+- guaranteed public release dates.

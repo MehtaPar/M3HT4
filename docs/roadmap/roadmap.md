@@ -1,39 +1,57 @@
-# Roadmap
+# Delivery Roadmap
 
-M3HT4 follows an incremental delivery model designed to avoid premature complexity.
-
-## Phase 1 — Foundation
-
-- Finalize project identity, vision, guardrails, and repository structure.
-- Maintain a safe validation environment.
-- Establish publication and licensing checks.
-
-## Phase 2 — First complete scenario
-
-- Define the scenario schema.
-- Validate representative evidence.
-- Produce Blue, Red, and Purple outputs.
-- Publish a sanitized case study.
-
-## Phase 3 — Repeatable framework
-
-- Convert the first scenario into reusable templates.
-- Add a small number of varied scenarios.
-- Improve documentation navigation and quality controls.
-
-## Phase 4 — Interactive experience
-
-- Launch the documentation-first M3HT4.com experience.
-- Add guided scenario exploration.
-- Add structured planning and export features only after the content model is stable.
-
-## Phase 5 — Community and scale
-
-- Define contribution standards for scenarios and detections.
-- Add validation automation where it reduces maintainer burden.
-- Evaluate sustainable hosting and support models.
+M3HT4 follows an incremental strategy: build a small useful artifact, validate it, publish it safely, and only then expand.
 
 ```mermaid
 flowchart LR
-    A[Foundation] --> B[First scenario] --> C[Repeatable framework] --> D[Interactive experience] --> E[Community and scale]
+    P1["Phase 1<br/>Public Foundation"] --> P2["Phase 2<br/>First Complete Scenario"]
+    P2 --> P3["Phase 3<br/>Reusable Artifacts"]
+    P3 --> P4["Phase 4<br/>Curated Scenario Library"]
+    P4 --> P5["Phase 5<br/>Interactive Platform"]
 ```
+
+## Phase 1 — Public foundation
+
+- finalize Modern Hunting Terrain branding;
+- define the 3 Teams and 4 Pillars;
+- align public documentation;
+- establish public/private boundaries;
+- eliminate broken navigation and stale positioning.
+
+## Phase 2 — First complete scenario
+
+- define one authorized objective;
+- map behavior to expected evidence;
+- validate representative telemetry;
+- document a hunt workflow;
+- identify detection opportunities;
+- publish a sanitized Purple-team after-action review.
+
+## Phase 3 — Reusable framework artifacts
+
+- scenario brief;
+- evidence map;
+- hunt plan;
+- emulation plan;
+- detection-validation record;
+- after-action review;
+- improvement backlog.
+
+## Phase 4 — Curated scenario library
+
+- add only validated scenarios;
+- tag scenarios by team, pillar, objective, and evidence source;
+- document limitations and prerequisites;
+- review and retire stale content.
+
+## Phase 5 — Interactive platform
+
+- searchable scenarios and artifacts;
+- Blue, Red, and Purple perspectives;
+- guided engagement planning;
+- interactive evidence relationships;
+- lightweight and maintainable hosting.
+
+## Delivery rule
+
+> The application should follow validated workflows—not attempt to invent them before they exist.

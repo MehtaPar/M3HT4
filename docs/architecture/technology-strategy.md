@@ -1,24 +1,40 @@
 # Technology Strategy
 
-Technology choices should support a small, maintainable project rather than create unnecessary operational burden.
+Technology choices should serve the framework rather than define it.
 
-## Selection criteria
+## Selection principles
 
-- Open standards and portable data formats where practical.
-- Mature open-source components with clear licensing.
-- Simple deployment and recovery.
-- Clear separation between public content and private infrastructure.
-- Low recurring cost during early development.
-- Ability to replace a vendor or component without redesigning the framework.
+1. Prefer open standards and portable formats.
+2. Remain vendor-neutral where practical.
+3. Use open-source components only under licenses compatible with intended use.
+4. Keep cost and operational complexity realistic for a small team.
+5. Add technology only when a validated workflow requires it.
+6. Keep internal AI assistance separate from public product claims.
+7. Design public artifacts so they remain useful without the private lab.
 
-## Public platform direction
+## Technology categories
 
-The public product should begin as a documentation-first website and add interactive features gradually. The first interactive workflow should prove clear value before larger application architecture is introduced.
+| Category | Role |
+|---|---|
+| Markdown and Git | Documentation, review, and version history |
+| GitHub | Collaboration, issues, releases, and public source |
+| Mermaid | Native visual explanation within GitHub |
+| Controlled virtualization | Private scenario validation |
+| Security telemetry tools | Evidence generation and analysis |
+| Web technologies | Future public interactive experience |
 
-## Data direction
+## Decision filter
 
-M3HT4 should store curated scenario metadata and sanitized examples—not indiscriminately ingest every vulnerability, threat actor, or telemetry source.
-
-## AI position
-
-AI tools may support internal research, drafting, coding, and quality review. They are not the defining public capability, and generated outputs must be reviewed before publication or operational use.
+```mermaid
+flowchart TD
+    A["New technology proposed"] --> B{"Supports a defined<br/>team, pillar, or milestone?"}
+    B -- No --> X["Do not add"]
+    B -- Yes --> C{"Maintainable by<br/>a small team?"}
+    C -- No --> X
+    C -- Yes --> D{"Public-safe and<br/>license-compatible?"}
+    D -- No --> X
+    D -- Yes --> E["Prototype narrowly"]
+    E --> F{"Validated value?"}
+    F -- No --> X
+    F -- Yes --> G["Document and adopt"]
+```

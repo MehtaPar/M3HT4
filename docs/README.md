@@ -1,42 +1,77 @@
-# M3HT4 Documentation Hub
+# M3HT4 Documentation
 
-M3HT4 is an evolving framework for connecting **Blue, Red, and Purple team** perspectives through four operational pillars: **Hunt, Detect, Emulate, and Train**.
+<p align="center"><strong>Modern Hunting Terrain</strong><br>One framework. Three team perspectives. Four operational pillars.</p>
 
 > [!WARNING]
-> This documentation describes an early-stage framework. Pages will evolve as complete scenarios are validated and published.
+> M3HT4 is in early development. Documentation describes the intended operating model and will evolve as end-to-end scenarios are validated.
 
-## Start here
+## Navigate the framework
 
-| Page | Purpose |
+| Section | Purpose |
 |---|---|
-| [Operating model](operations-model.md) | Explains the 3 Teams and 4 Pillars |
-| [Reference architecture](architecture/overview.md) | Explains the public framework and private validation boundary |
-| [Project status](project-status.md) | Shows current progress and the next milestone |
-| [Roadmap](roadmap.md) | Defines phased implementation |
-| [Technology strategy](technology-stack.md) | Describes selection and sustainability principles |
-| [Publication safety](security/publication-safety.md) | Defines what may and may not be published |
+| [Platform Vision](framework/vision.md) | Defines what M3HT4 is, who it serves, and what makes it different |
+| [Operating Model](framework/operating-model.md) | Explains the 3 Teams, 4 Pillars, shared lifecycle, and artifacts |
+| [Reference Architecture](architecture/reference-architecture.md) | Shows how the public framework relates to private validation |
+| [Technology Strategy](architecture/technology-strategy.md) | Sets vendor-neutral, maintainable selection principles |
+| [Project Status](roadmap/status.md) | Shows current maturity and the next concrete milestone |
+| [Roadmap](roadmap/roadmap.md) | Defines incremental delivery phases |
+| [Publication Safety](security/publication-safety.md) | Defines public-release boundaries |
+| [Sanitized Examples](../examples/README.md) | Establishes requirements for future public scenarios |
+| [M3HT4.com Direction](../website/README.md) | Explains the public website and interactive application path |
 
-## How to read the project
+## Framework at a glance
 
-**New readers** should start with:
+```mermaid
+mindmap
+  root((M3HT4))
+    Teams
+      Blue
+      Red
+      Purple
+    Pillars
+      Hunt
+      Detect
+      Emulate
+      Train
+    Artifacts
+      Scenario Brief
+      Evidence Map
+      Hunt Plan
+      Detection Record
+      Emulation Plan
+      After-Action Review
+    Outcomes
+      Shared Understanding
+      Better Visibility
+      Measurable Validation
+      Reusable Learning
+```
 
-1. The repository [README](../README.md)
-2. The [operating model](operations-model.md)
-3. The [reference architecture](architecture/overview.md)
-4. The [roadmap](roadmap.md)
+## Recommended reading paths
 
-**Practitioners** should focus on:
+<details open>
+<summary><strong>New visitor</strong></summary>
 
-- the connection between adversary behavior and defender-visible evidence;
-- reusable hunt, detection, emulation, and review artifacts;
-- measurable Blue/Red/Purple collaboration;
-- public-safe, vendor-neutral documentation.
+1. [Platform Vision](framework/vision.md)
+2. [Operating Model](framework/operating-model.md)
+3. [Project Status](roadmap/status.md)
 
-## Documentation standard
+</details>
 
-Every public page should be:
+<details>
+<summary><strong>Blue-team practitioner</strong></summary>
 
-- understandable without access to the private lab;
-- free of credentials, private endpoints, real device identifiers, and operational secrets;
-- clear about assumptions, limitations, and current maturity;
-- useful to at least one of the 3 Teams and one of the 4 Pillars.
+1. [Operating Model — Blue Team](framework/operating-model.md#blue-team)
+2. [Operating Model — Hunt and Detect](framework/operating-model.md#the-four-pillars)
+3. [Reference Architecture](architecture/reference-architecture.md)
+
+</details>
+
+<details>
+<summary><strong>Red or Purple-team practitioner</strong></summary>
+
+1. [Operating Model — Red and Purple Teams](framework/operating-model.md)
+2. [Shared Scenario Lifecycle](framework/operating-model.md#shared-scenario-lifecycle)
+3. [Roadmap](roadmap/roadmap.md)
+
+</details>

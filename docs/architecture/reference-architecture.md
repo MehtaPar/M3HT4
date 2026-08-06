@@ -1,36 +1,54 @@
 # Reference Architecture
 
-M3HT4 separates the public product from the private environment used to validate it.
+## Purpose
+
+The M3HT4 architecture separates the **public framework** from the **private validation environment**.
 
 ```mermaid
-flowchart LR
-    Lab[Private validation environment] --> Artifacts[Sanitized evidence and reusable artifacts]
-    Artifacts --> Framework[Public M3HT4 framework]
-    Framework --> Web[Future interactive platform]
-    Web --> Users[Blue · Red · Purple teams]
+flowchart TB
+    subgraph PUBLIC["Public M3HT4"]
+      GH["GitHub Repository<br/>Docs · Templates · Releases"]
+      WEB["M3HT4.com<br/>Public Experience"]
+      APP["Future Interactive Framework"]
+      GH --> WEB
+      GH --> APP
+    end
 
-    classDef private fill:#3a1720,stroke:#ff5d73,color:#fff;
-    classDef public fill:#092b46,stroke:#15b8ff,color:#fff;
-    class Lab private;
-    class Artifacts,Framework,Web,Users public;
+    subgraph PRIVATE["Private Validation Environment"]
+      LAB["Controlled Reference Lab"]
+      DATA["Representative Telemetry"]
+      TEST["Scenario Validation"]
+      LAB --> DATA --> TEST
+    end
+
+    TEST -->|"Sanitized artifacts only"| GH
+
+    classDef public fill:#0b3150,stroke:#15b8ff,color:#fff;
+    classDef private fill:#3a2028,stroke:#ff6b7a,color:#fff;
+    class GH,WEB,APP public;
+    class LAB,DATA,TEST private;
 ```
 
-## Layer 1: Private validation environment
+## Information boundary
 
-Used to test assumptions, generate controlled evidence, and validate workflows. Configuration details remain private unless they are intentionally generalized and safe to publish.
+| Information | Public | Private |
+|---|:---:|:---:|
+| Generalized logical diagrams | ✅ | |
+| Sanitized scenario artifacts | ✅ | |
+| Vendor-neutral workflows | ✅ | |
+| Real credentials or tokens | | ✅ |
+| Internal addressing and hostnames | | ✅ |
+| VPN and management access paths | | ✅ |
+| Raw private packet captures or VM images | | ✅ |
+| Environment-specific firewall rules | | ✅ |
 
-## Layer 2: Sanitized artifacts
+## Design principles
 
-Representative logs, diagrams, templates, mappings, and lessons learned are reviewed before publication.
+- **Separation:** public content never requires exposure of private operational details.
+- **Sanitization:** examples use fictional or reserved identifiers.
+- **Portability:** workflows should survive changes in products or lab infrastructure.
+- **Traceability:** published artifacts explain assumptions, evidence, limitations, and outcomes.
+- **Maintainability:** architecture grows only when a validated use case requires it.
 
-## Layer 3: Public framework
-
-Documentation and reusable workflows connect behavior, evidence, hunting, detection, emulation, and learning.
-
-## Layer 4: Interactive platform
-
-M3HT4.com will eventually guide users through framework content and scenario workflows without exposing the private validation environment.
-
-## Boundary rule
-
-No public feature should require the publication of credentials, live addressing, sensitive topology, private endpoints, firewall policy, authentication material, raw private captures, or operational secrets.
+> [!IMPORTANT]
+> The private lab validates M3HT4. It is not itself the public M3HT4 product.
