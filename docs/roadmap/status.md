@@ -1,4 +1,4 @@
-# Project Status
+# Development Roadmap
 
 > [!WARNING]
 > M3HT4 is in early development. The current repository establishes the public identity, framework model, and delivery direction; it is not yet a mature hosted platform.
@@ -29,24 +29,38 @@ Publish one complete, sanitized scenario containing:
 - a Purple-team after-action review;
 - reusable lessons and improvement items.
 
-## Readiness view
+
+## The M3HT4 Journey
+
+M3HT4 is being built incrementally. Each milestone adds a complete, validated capability before expanding to the next.
 
 ```mermaid
-quadrantChart
-    title M3HT4 Workstream Readiness
-    x-axis Early --> Mature
-    y-axis Supporting --> Core
-    quadrant-1 Build Next
-    quadrant-2 Strengthen
-    quadrant-3 Defer
-    quadrant-4 Maintain
-    Identity: [0.75, 0.85]
-    Operating Model: [0.70, 0.90]
-    Documentation: [0.45, 0.75]
-    Validation Lab: [0.40, 0.65]
-    First Scenario: [0.20, 0.95]
-    Interactive App: [0.10, 0.55]
+flowchart LR
+    A["🏗️ Foundation<br/><sub>Vision • Branding • Framework</sub>"]
+    B["🧪 Validation<br/><sub>Reference Environment</sub>"]
+    C["🎯 First Scenario<br/><sub>End-to-End Workflow</sub>"]
+    D["📚 Framework Library<br/><sub>Reusable Artifacts</sub>"]
+    E["🌐 Interactive Platform<br/><sub>M3HT4.com</sub>"]
+
+    A --> B --> C --> D --> E
+
+    style A fill:#16a34a,color:#fff,stroke:#15803d,stroke-width:2px
+    style B fill:#f59e0b,color:#fff,stroke:#d97706,stroke-width:2px
+    style C fill:#2563eb,color:#fff,stroke:#1d4ed8,stroke-width:2px
+    style D fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+    style E fill:#0f766e,color:#fff,stroke:#115e59,stroke-width:2px
 ```
+
+### Current focus
+
+M3HT4 is currently focused on building a **strong foundation**:
+
+- ✅ Establish the framework vision
+- ✅ Define the 3 Teams and 4 Pillars
+- 🟡 Build and validate the reference environment
+- 🟡 Publish the first complete end-to-end scenario
+
+Rather than building a large collection of incomplete content, M3HT4 prioritizes **small, validated milestones** that can be expanded over time.
 
 ## Available today
 
