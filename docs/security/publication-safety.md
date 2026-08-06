@@ -1,27 +1,54 @@
-# Publication Safety
+# Safe Contribution Guidelines
 
-M3HT4 is public. Every contribution should be reviewed as though it may be indexed, copied, and retained permanently.
+M3HT4 is a public, open-source cybersecurity framework. Every contribution should be suitable for public release and should support the project's focus on **authorized defensive security, threat hunting, adversary emulation planning, and collaborative learning**.
 
-## Safe to publish
+These guidelines help ensure the repository remains safe, professional, and useful to the broader cybersecurity community.
 
-- generalized architectures;
-- sanitized examples and scenarios;
-- fictional or reserved identifiers;
-- vendor-neutral workflows;
-- original or properly licensed content;
-- lessons learned without identifying private systems or people.
+---
 
-## Keep private
+## What belongs in this repository
 
-- credentials, tokens, API keys, private keys, and recovery codes;
-- authentication cookies or session material;
-- real internal IP addresses, hostnames, domains, UUIDs, MAC addresses, or serial numbers;
-- VPN configuration, management paths, or firewall rules exposing access;
-- raw private packet captures, memory dumps, backups, or VM images;
-- cloud/account identifiers and private certificates;
-- environment-specific details that materially increase risk.
+Contributions should prioritize:
 
-## Approved placeholder patterns
+- Public-safe documentation
+- Sanitized scenarios and examples
+- Threat hunting workflows
+- Detection engineering concepts
+- Adversary-emulation planning
+- Purple-team collaboration
+- Vendor-neutral guidance where practical
+- Original work or properly licensed content
+
+---
+
+## What should never be committed
+
+Do **not** include:
+
+- Credentials, API keys, tokens, or secrets
+- Internal IP addresses or network diagrams
+- VPN or firewall configurations
+- Private certificates or cryptographic keys
+- Packet captures containing sensitive data
+- Virtual machine images or backups
+- Memory dumps
+- Customer or organizational information
+- Environment-specific operational details
+
+When in doubt, **leave it out**.
+
+---
+
+## Sanitization standards
+
+Before submitting a contribution:
+
+- Replace environment-specific information with placeholders.
+- Use fictional hostnames and reserved IP address ranges.
+- Remove any information that could identify a real environment.
+- Verify screenshots do not expose sensitive details.
+
+Example placeholders:
 
 ```text
 host.example.lab
@@ -31,19 +58,66 @@ AA:BB:CC:XX:XX:XX
 <REDACTED_TOKEN>
 ```
 
-## Publication workflow
+---
+
+## Before opening a Pull Request
+
+Use this checklist before submitting changes:
+
+- [ ] No credentials or secrets are included
+- [ ] No private infrastructure details are exposed
+- [ ] Examples are sanitized
+- [ ] Third-party content is properly licensed
+- [ ] Links render correctly
+- [ ] Documentation is clear and accurate
+- [ ] Content supports the M3HT4 framework
+
+---
+
+## Contribution Review
+
+Every contribution should improve at least one of the following:
+
+- 🔵 Blue Team workflows
+- 🔴 Red Team planning
+- 🟣 Purple Team collaboration
+- 🔎 Hunt
+- 🛡️ Detect
+- ♟️ Emulate
+- 📘 Train
+
+If a contribution doesn't strengthen one of these areas, it may not align with the goals of M3HT4.
+
+---
+
+## Contribution Workflow
 
 ```mermaid
 flowchart TD
-    A["Create or update content"] --> B["Review files and images"]
-    B --> C{"Secrets or private<br/>environment details?"}
-    C -- Yes --> D["Remove, redact, or keep private"]
+    A["Create contribution"] --> B["Review for sensitive information"]
+
+    B --> C{"Contains private or<br/>environment-specific data?"}
+
+    C -- Yes --> D["Sanitize or remove"]
     D --> B
-    C -- No --> E{"Third-party code,<br/>data, or media?"}
-    E -- Yes --> F["Verify license and attribution"]
-    F --> G["Run secret and link checks"]
-    E -- No --> G
-    G --> H{"Supports the public<br/>M3HT4 vision?"}
-    H -- No --> I["Revise or do not publish"]
-    H -- Yes --> J["Commit and publish"]
+
+    C -- No --> E{"Supports the M3HT4 framework?"}
+
+    E -- No --> F["Revise contribution"]
+
+    E -- Yes --> G["Verify links and formatting"]
+
+    G --> H["Open Pull Request"]
+
+    H --> I["Community Review"]
+
+    I --> J["Merge"]
 ```
+
+---
+
+## Our Goal
+
+M3HT4 is intended to be a trusted public resource for cybersecurity professionals, students, and researchers.
+
+Every contribution should improve the framework while protecting privacy, respecting licensing, and promoting responsible, authorized security practices.
