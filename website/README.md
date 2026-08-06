@@ -1,19 +1,30 @@
 # M3HT4.com Direction
 
-M3HT4.com will be the public home of Modern Hunting Terrain.
+M3HT4.com will become the polished public home for Modern Hunting Terrain.
 
-## Initial website
+## Intended roles
 
-The first release should be a clear, documentation-first experience that explains:
+### Main website
 
-- what M3HT4 is;
-- who it serves;
-- how the 3 Teams and 4 Pillars work;
-- current status and roadmap;
-- and how to follow or contribute safely.
+- introduce M3HT4 to a broad audience;
+- explain the 3 Teams and 4 Pillars;
+- show validated use cases and project progress;
+- direct technical readers to GitHub and documentation.
 
-## Future interactive platform
+### Future interactive framework
 
-Interactive features should be added only after the first complete scenario and data model are validated. Potential features include guided scenario exploration, evidence mapping, hunt-plan construction, emulation-plan drafting, and purple-team engagement planning.
+- guide users through scenarios and evidence relationships;
+- provide Blue, Red, and Purple perspectives;
+- support hunt, detection, emulation, and training workflows;
+- remain lightweight, curated, and safe for public use.
 
-The public website must not expose the private validation environment or depend on live access to it.
+## Relationship to GitHub
+
+| GitHub | M3HT4.com |
+|---|---|
+| Source files and change history | Polished public experience |
+| Technical documentation | Guided explanation and discovery |
+| Issues and contributions | Interactive framework workflows |
+| Releases and templates | Demonstrations and scenario navigation |
+
+The website should not expose the private validation environment or require users to access it.

@@ -1,35 +1,42 @@
-# M3HT4 Documentation
+# M3HT4 Documentation Hub
 
-Welcome to the documentation hub for **M3HT4 — Modern Hunting Terrain**.
+M3HT4 is an evolving framework for connecting **Blue, Red, and Purple team** perspectives through four operational pillars: **Hunt, Detect, Emulate, and Train**.
 
 > [!WARNING]
-> M3HT4 is under active development. Documentation reflects the intended framework and validated progress at the time of publication.
+> This documentation describes an early-stage framework. Pages will evolve as complete scenarios are validated and published.
 
 ## Start here
 
-| Area | Purpose |
+| Page | Purpose |
 |---|---|
-| [Framework vision](framework/vision.md) | Understand what M3HT4 is, who it serves, and what it deliberately avoids |
-| [Operating model](framework/operating-model.md) | See how Blue, Red, and Purple teams use Hunt, Detect, Emulate, and Train |
-| [Reference architecture](architecture/reference-architecture.md) | Understand the separation between the public framework, interactive platform, and private validation environment |
-| [Technology strategy](architecture/technology-strategy.md) | Review maintainability, vendor-neutrality, and technology-selection principles |
-| [Project status](roadmap/status.md) | See current progress and the next milestone |
-| [Roadmap](roadmap/roadmap.md) | Follow the phased delivery plan |
-| [Publication safety](security/publication-safety.md) | Review what may and may not be published |
+| [Operating model](operations-model.md) | Explains the 3 Teams and 4 Pillars |
+| [Reference architecture](architecture/overview.md) | Explains the public framework and private validation boundary |
+| [Project status](project-status.md) | Shows current progress and the next milestone |
+| [Roadmap](roadmap.md) | Defines phased implementation |
+| [Technology strategy](technology-stack.md) | Describes selection and sustainability principles |
+| [Publication safety](security/publication-safety.md) | Defines what may and may not be published |
 
-## Team guides
+## How to read the project
 
-- [Blue Team](teams/blue-team.md)
-- [Red Team](teams/red-team.md)
-- [Purple Team](teams/purple-team.md)
+**New readers** should start with:
 
-## Pillar guides
+1. The repository [README](../README.md)
+2. The [operating model](operations-model.md)
+3. The [reference architecture](architecture/overview.md)
+4. The [roadmap](roadmap.md)
 
-- [Hunt](pillars/hunt.md)
-- [Detect](pillars/detect.md)
-- [Emulate](pillars/emulate.md)
-- [Train](pillars/train.md)
+**Practitioners** should focus on:
 
-## Public examples
+- the connection between adversary behavior and defender-visible evidence;
+- reusable hunt, detection, emulation, and review artifacts;
+- measurable Blue/Red/Purple collaboration;
+- public-safe, vendor-neutral documentation.
 
-The [`examples/`](../examples/) directory will contain only sanitized, reusable materials. It will not contain live credentials, private captures, real environment addressing, or destructive instructions.
+## Documentation standard
+
+Every public page should be:
+
+- understandable without access to the private lab;
+- free of credentials, private endpoints, real device identifiers, and operational secrets;
+- clear about assumptions, limitations, and current maturity;
+- useful to at least one of the 3 Teams and one of the 4 Pillars.

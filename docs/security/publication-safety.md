@@ -1,30 +1,41 @@
-# Publication Safety
+# Publication Safety Standard
 
-This repository is public. Contributions must be reviewed for security, privacy, legal, and licensing concerns before they are pushed.
+M3HT4 is a public repository. Every contribution must be reviewed as though it will be indexed, copied, and retained permanently.
 
-## Never publish
+## Safe to publish
 
-- Credentials, passwords, tokens, recovery codes, or authentication cookies.
-- Private keys, certificates containing private material, or VPN secrets.
-- Live public endpoints or firewall/NAT rules that expose services.
-- Real internal addressing combined with detailed topology or management paths.
-- Device serial numbers, account identifiers, or environment-specific access details.
-- Raw private captures, logs, screenshots, or exports containing sensitive information.
-- Proprietary code, restricted material, or third-party content without appropriate permission.
+- generalized architectures and diagrams;
+- sanitized scenario descriptions;
+- placeholder addressing and identifiers;
+- vendor-neutral workflows;
+- original content or properly licensed resources;
+- lessons learned without identifying private systems or people.
 
-## Public-safe alternatives
+## Keep private
 
-- Use placeholders and generalized diagrams.
-- Publish sanitized excerpts rather than raw exports.
-- Describe architecture logically rather than reproducing the live environment.
-- Use fictional example values and clearly label them.
-- Record third-party licenses and attribution where required.
+- credentials, tokens, API keys, private keys, and recovery codes;
+- authentication cookies and session material;
+- real internal IP addresses, hostnames, domains, UUIDs, MAC addresses, or serial numbers;
+- VPN configurations, management paths, or firewall rules that expose access;
+- raw private packet captures, memory dumps, backups, or virtual-machine images;
+- cloud/account identifiers and private certificates;
+- environment-specific details that materially increase risk.
 
-## Before a public commit
+## Example placeholders
 
-1. Review every changed file in GitHub Desktop.
-2. Confirm GitHub secret scanning and push protection report no issues.
-3. Search for credentials, internal identifiers, addresses, and private endpoints.
-4. Confirm images do not reveal browser tabs, account names, QR codes, or infrastructure details.
-5. Verify licensing and attribution.
-6. Confirm wording matches the current M3HT4 vision.
+```text
+host.example.lab
+192.0.2.10
+AA:BB:CC:XX:XX:XX
+<REDACTED_UUID>
+<REDACTED_TOKEN>
+```
+
+## Before publishing
+
+1. Review every changed file and image.
+2. Confirm no secret-scanning alerts are present.
+3. Search for environment-specific names and addresses.
+4. Confirm third-party code, data, and media are appropriately licensed.
+5. Verify the content supports the public M3HT4 vision.
+6. When uncertain, keep the information private until reviewed.
